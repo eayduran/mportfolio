@@ -14,21 +14,21 @@ const Navbar = () => {
                 </Link>
                 
                 <div>
-                    <ul className='hidden md:flex'>
+                    <ul className='flex items-center justify-between font-semibold sm:gap-8'>
 
-                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-white hover:text-white hover:'>
+                        <li className='cursor-pointer hover:text-red-400 hover:underline hover:decoration-2 hover:underline-offset-4'>
                         <Link href='/#about'>About</Link>
                         </li>
 
-                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-white hover:text-white hover:'>
+                        <li className='cursor-pointer hover:text-red-400 hover:underline hover:decoration-2 hover:underline-offset-4'>
                         <Link href='/#projects'>Projects</Link>
                         </li>
 
-                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-white hover:text-white hover:'>
+                        <li className='cursor-pointer hover:text-red-400 hover:underline hover:decoration-2 hover:underline-offset-4'>
                         <Link href='/#skills'>Skills</Link>
                         </li>
                         
-                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-white hover:text-white hover:'>
+                        <li className='cursor-pointer hover:text-red-400 hover:underline hover:decoration-2 hover:underline-offset-4'>
                         <Link href='/#contact'>Contact</Link>
                         </li>
                     
