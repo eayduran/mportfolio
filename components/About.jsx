@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function About() {
     return (
-      <div id="about" className="flex items-center bg-green-200 h-screen">
+      <div id="about" className="flex items-center justify-center bg-green-200 h-screen">
       <div className="w-half">
           About myself
       </div>

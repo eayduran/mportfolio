@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Projects() {
     return (
-      <div id="projects" className="flex items-center bg-yellow-200 h-screen">
+      <div id="projects" className="flex items-center justify-center bg-yellow-200 h-screen">
       <div className="w-half">
           Projects
       </div>

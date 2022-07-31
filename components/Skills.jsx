@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Skills() {
     return (
-      <div id="skills" className="flex items-center bg-red-200 h-screen">
+      <div id="skills" className="flex items-center justify-center bg-red-200 h-screen">
       <div className="w-half">
           Skills 
       </div>
