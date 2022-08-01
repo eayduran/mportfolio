@@ -10,3 +10,8 @@
         @apply bg-gray-500
     }
 }
+
+@font-face {
+    font-family: "Bebas";
+    src: url("../public/fonts/BebasN/BebasNeue.ttf");
+}
