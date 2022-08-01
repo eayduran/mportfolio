@@ -23,7 +23,7 @@ export default function Home() {
   },[])
   return (
     //  scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-screen overflow-y-scroll
-    <div className="">
+    <div className="font-mono">
       <Main />
       <About />
       <Projects />

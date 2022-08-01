@@ -17,9 +17,17 @@ module.exports = {
         'secondary' : 'rgb(17,17,17)',
         'primary-light' : 'rgb(170,170,170)',
       },
+      fontSize: {
+        'laptop' : '13em',
+      },
       fontFamily: {
         bebas: ["Bebas", "sans-serif"],
       },
+      
+      margin: {
+        'zero':'-9px',
+        'iki': '-2px'
+      }
     },
   },
   plugins: [
