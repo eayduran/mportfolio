@@ -1,15 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import Navbar from "./Navbar"
+import MainSVG from "../public/assets/Main.svg";
 
 const Main = () => {
 
     return(        
-        <div id="main" className="flex flex-col bg-blue-200 h-screen">
+        <div id="main" className="calc-height flex w-full flex-col bg-blue-200 h-screen">
             <Navbar />
-            <div className="flex justify-center items-center h-screen">
+            <div className="flex justify-evenly items-center h-screen">
 
-                <div className="w-1/2">
+                <div className="w-5/12 bg-pink-300">
                     <p className="text-md text-red-700">
                         Hey there, my name is
                     </p>
@@ -36,8 +37,14 @@ const Main = () => {
                         .
                     </p>
                 </div>
-                <div className="w-half">
-                    <Image src="/../public/assets/main.jpeg" alt="main" width="200px" height="200px" />
+                <div className="hidden md:inline-block">
+                    <Image
+                        src={MainSVG}
+                        width={600}
+                        height={450}
+                        priority
+                        alt="Main Portfolio Introducer"
+                    />
                 </div>
             </div>
         </div>
