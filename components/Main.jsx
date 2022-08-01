@@ -53,11 +53,11 @@ const Main = () => {
                             <span className="mr-zero text-primary hover:text-primary-light transition-colors">E</span>
                             <span className="mr-zero text-primary hover:text-primary-light transition-colors">R</span>
                         </div>
-                        <div className="">
-                            <div className="flex flex-col w-1/2 text-primary-light bg-secondary text-6xl ml-16 font-sans font-light">
+                        <div className="" style={{marginLeft: 2*scr}}>
+                            <div className="flex flex-col w-80 text-primary-light bg-secondary text-6xl ml-16 font-sans font-light">
                                 About 
                                 <span className="text-sm">
-                                I'm a front-end developer building scalable, performant, and responsive websites located in Istanbul. Currently, I'm producing useful UI and webpages at Adesso Turkey.
+                                I`m a front-end developer building scalable, performant, and responsive websites located in Istanbul. Currently, I`m producing useful UI and webpages at Adesso Turkey.
                                 </span>
                             </div>
                         </div>
