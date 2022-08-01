@@ -17,7 +17,7 @@ const Main = () => {
         return  () => window.removeEventListener("scroll", scroll, false);
     },[])
     return(        
-        <div id="main" className="calc-height flex w-full flex-col bg-blue-200 h-screen">
+        <div id="main" className="overflow-x-hidden calc-height flex w-full flex-col bg-blue-200 h-screen">
             <Navbar />
             <div className="font-mono tracking-tight bg-red-200 font-bold text-6xl flex flex-col items-center h-screen w-full justify-center">
                 <div className="flex flex-row items-center">
