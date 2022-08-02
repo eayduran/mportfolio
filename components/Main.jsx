@@ -57,13 +57,13 @@ const Main = () => {
                             <div className="flex flex-col w-1/2 text-primary-light bg-secondary text-6xl ml-16 font-sans font-light">
                                 About 
                                 <span className="text-sm">
-                                I'm a front-end developer building scalable, performant, and responsive websites located in Istanbul. Currently, I'm producing useful UI and webpages at Adesso Turkey.
+                                I am a front-end developer building scalable, performant, and responsive websites located in Istanbul. Currently, I am producing useful UI and webpages at Adesso Turkey.
                                 </span>
                             </div>
                         </div>
                     </div>
             </div>
-            <div className="animate-bounce bg-secondary text-white flex items-center w-full justify-center">
+            <div className="animate-bounce bg-secondary text-primary flex items-center w-full justify-center">
                 <span>
                 Scroll Down
                 </span> 

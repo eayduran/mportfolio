@@ -8,10 +8,17 @@ const Navbar = () => {
             <div className="flex justify-between items-center w-full h-full 2xl:px-16 px-6">
                 
                 <Link href='/'>
-                    <a className="hidden md:flex">
+                    <div className="hidden md:flex">
                         {/* <Image src="/../public/assets/logo.jpeg" alt="logo" width={50} height={50}/> */}
-                        <div className="hover:text-primary-light text-primary">ENES AYDURAN</div>
-                    </a>
+                        <div className="flex flex-col text-sm hover:text-primary-light text-primary">
+                            <div>
+                                ENES
+                            </div>
+                            <div className="mt-iki">
+                                AYDURAN
+                            </div>
+                        </div>
+                    </div>
                 </Link>
                 
                 <div>

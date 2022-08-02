@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 export default function Projects() {
@@ -8,7 +8,7 @@ export default function Projects() {
           Projects
       </div>
       <div className="w-half">
-          <Image src="/../public/assets/main.jpeg" alt="main" width="100px" height="100px" />
+          {/* <Image src="/../public/assets/main.jpeg" alt="main" width="100px" height="100px" /> */}
       </div>
     </div>
     )

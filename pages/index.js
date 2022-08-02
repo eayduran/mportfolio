@@ -25,7 +25,7 @@ export default function Home() {
     //  scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-screen overflow-y-scroll
     <div className="font-mono">
       <Main />
-      <About />
+      {/* <About /> */}
       <Projects />
       <Skills />
       <Contact />
