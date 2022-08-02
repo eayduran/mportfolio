@@ -1,16 +1,38 @@
+import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Navbar from "./Navbar"
+import MainSVG from "../public/assets/Main.svg";
+import line from "../public/assets/line.svg";
 
-export default function Contact() {
-    return (
-      <div id="contact" className="flex items-center justify-center bg-gray-200 h-screen">
-      <div className="w-half">
-          Contact page
-      </div>
-      <div className="w-half">
-          <Image src="/../public/assets/main.jpeg" alt="main" width="100px" height="100px" />
-      </div>
-    </div>
-    )
-  }
-  
+import {useEffect, useState} from 'react';
+
+const Contact = () => {
+  const [scr, setSrc] = useState(30)
+  const [swidth, setSw] = useState(0)
+  const [contactswidth, setContw] = useState(71)
+
+    // let swidth = window.innerWidth;
+    // let projectswidth = document.getElementById("projectsdiv").offsetWidth
+    useEffect(()=>{
+        const scroll = (event) => {
+        // console.log(window.scrollY, swidth)
+        setSrc(window.scrollY)
+        setSw(window.innerWidth)
+        setContw(document.getElementById("contactsdiv").offsetWidth)  
+        }
+        window.addEventListener("scroll", scroll, false);
+        return  () => window.removeEventListener("scroll", scroll, false);
+    },[])
+    return(        
+        <div id="contact" className="overflow-x-hidden calc-height flex w-full flex-col h-screen bg-secondary">
+            <div className="bg-secondary text-white flex items-center justify-start w-full h-20 shadow-xl text-xl font-sans">
+                          <div id="contactsdiv" className="w-auto" style={{marginLeft: scr<1792?-100: (2*scr - 3684)<=(swidth/2 - contactswidth/2)? 2*scr - 3684: (swidth/2 - contactswidth/2)}}>
+                          Contact
+                          </div>
+            </div>
+            
+        </div>
+    );
+}
+
+export default Contact;

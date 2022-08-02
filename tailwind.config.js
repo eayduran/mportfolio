@@ -27,7 +27,12 @@ module.exports = {
       margin: {
         'zero':'-9px',
         'iki': '-2px'
-      }
+      },
+      divideColor: {
+        'primary' : '#777777',
+        'secondary' : 'rgb(17,17,17)',
+        'primary-light' : 'rgb(170,170,170)',
+      },
     },
   },
   plugins: [

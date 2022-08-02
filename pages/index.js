@@ -15,7 +15,6 @@ export default function Home() {
   const [scr, setSrc] = useState(0)
   useEffect(()=>{
     const scroll = (event) => {
-      console.log(window.scrollY)
       setSrc(window.scrollY)
     }
     window.addEventListener("scroll", scroll, false);
@@ -23,9 +22,9 @@ export default function Home() {
   },[])
   return (
     //  scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-screen overflow-y-scroll
-    <div className="font-mono">
+    <div className="font-mono divide-y divide-primary">
       <Main />
-      <About />
+      {/* <About /> */}
       <Projects />
       <Skills />
       <Contact />
