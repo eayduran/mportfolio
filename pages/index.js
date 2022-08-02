@@ -28,7 +28,9 @@ export default function Home() {
       <Projects />
       <Skills />
       <Contact />
-      <Upbutton scr={scr} />
+      <div className="divide-none">
+        <Upbutton scr={scr} />
+      </div>
     </div>
   )
 }
