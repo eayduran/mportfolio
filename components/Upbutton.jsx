@@ -9,7 +9,7 @@ export default function Upbutton({scr}) {
           <div className="fixed bottom-12 right-12 w-20 h-20 flex items-center justify-center z-[100] rounded-xl">
             <Image src={tri} height={50} width={50} alt="Go up button" />
           </div>
-
+          
        </Link>: null }
       </>
     )

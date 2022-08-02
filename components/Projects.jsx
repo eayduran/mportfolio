@@ -25,9 +25,9 @@ const Projects = () => {
     },[])
     return(        
         <div id="projects" className="overflow-x-hidden calc-height flex w-full flex-col h-screen bg-secondary">
-            <div className="text-white flex items-center justify-start w-full h-20 text-xl font-sans">
-                          <div id="projectsdiv" className="w-auto" style={{marginLeft: scr<175?-100: (2*scr - 450)<=(swidth/2 - projectswidth/2)? 2*scr - 450: (swidth/2 - projectswidth/2)}}>
-                              Projects
+            <div className="text-white flex items-center justify-start w-full h-20 text-4xl font-sans">
+                          <div id="projectsdiv" className="w-auto" style={{marginLeft: scr<175?-200: (2*scr - 550)<=(swidth/2 - projectswidth/2)? 2*scr - 550: (swidth/2 - projectswidth/2)}}>
+                              PROJECTS
                           </div>
             </div>
             

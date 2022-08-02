@@ -25,9 +25,9 @@ const Skills = () => {
     },[])
     return(        
         <div id="skills" className="overflow-x-hidden calc-height flex w-full flex-col h-screen bg-secondary">
-            <div className="text-white flex items-center justify-start w-full h-20 text-xl font-sans">
-                          <div id="skillsdiv" className="w-auto" style={{marginLeft: scr<984?-100: (2*scr - 2068)<=(swidth/2 - skillswidth/2)? 2*scr - 2068: (swidth/2 - skillswidth/2)}}>
-                          Skills
+            <div className="text-white flex items-center justify-start w-full h-20 text-4xl font-sans">
+                          <div id="skillsdiv" className="w-auto" style={{marginLeft: scr<984?-150: (2*scr - 2118)<=(swidth/2 - skillswidth/2)? 2*scr - 2118: (swidth/2 - skillswidth/2)}}>
+                          SKILLS
                           </div>
             </div>
             
