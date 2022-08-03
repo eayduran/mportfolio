@@ -32,37 +32,7 @@ const Skills = () => {
                           SKILLS
                           </div>
             </div>
-            <div id="projectscontdiv" className="bg-primary flex justify-center items-center mb-10 w-full h-5/6 text-4xl font-sans">
-                            <div className="flex flex-col justify-between text-white z-[100] absolute w-3/4 h-3/4">
-                                <div className="pl-4 flex">
-                                    <div onClick={()=>{funcCont.classList.remove("invisible")}} className="bg-black w-auto">Go back</div>
-                                </div>
-                                <div className="flex items-center justify-center bg-red-200">
-                                    <div className="mr-20 h-80 flex items-center">
-                                        img
-                                    </div>
-                                    <div className="">
-                                        To Do Clone
-                                        <div className="text-sm">
-                                            sadasdasdasdasdasdasdasd
-                                        </div>
-                                        <div className="flex text-sm mt-8">
-                                                <div className="mr-4">
-                                                    Website
-                                                </div>
-                                                <div>
-                                                    Code
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="pl-4 flex">
-                                    <div className="bg-primary text-primary w-auto">.</div>
-                                </div>
-                            </div>
-                            <div className="z-[100] scale-67xs transition duration-500 text-sm bg-secondary w-1/2 h-full -translate-x-3/4"></div>
-                            <div className="z-[100] scale-67xs transition duration-500 text-sm bg-secondary w-1/2 h-full translate-x-3/4"></div>
-            </div>
+            
             {/* <div id="projectscontdiv" className="bg-primary flex justify-center items-center mb-10 w-full h-5/6 font-sans">
                             <div className="text-xl w-1/2 h-full">
                                 asd
