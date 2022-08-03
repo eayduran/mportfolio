@@ -44,13 +44,13 @@ const Projects = () => {
                                         <div className="flex flex-col justify-between py-6 px-2 w-1/4 bg-gray-800 items-center">
                                             <div className="w-280 h-400 border-solid border-b-8 border-l-8 flex flex-col justify-center">
                                                 <div onClick={()=>{
-                                                    funcCont.classList.add("opacity-0");
+                                                    funcCont.classList.add("invisible");
                                                 
                                                 }} className="transition-colors hover:text-black hover:border-black hover:bg-red-200 border-solid border-4 rotate-46 text-4xl left-8 top-28 -mb-3 relative">
                                                     Portfolio
                                                 </div>
                                                 <div onClick={()=>{
-                                                    funcCont.classList.add("animate-fade");
+                                                    funcCont.classList.remove("invisible");
 
                                                 }} className="transition-colors hover:text-black hover:border-black hover:bg-red-200 border-solid border-4 rotate-46 mt-6 mr-2 text-4xl right-6 top-14 relative">
                                                     E-commerce

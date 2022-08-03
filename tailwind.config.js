@@ -42,6 +42,9 @@ module.exports = {
       width:{
         '280': '280px'
       },
+      scale:{
+        '67x': '67.0'
+      },
       // that is animation class
       animation: {
         fade: 'fadeOut 1s ease-in-out',
