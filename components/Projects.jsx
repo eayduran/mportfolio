@@ -125,6 +125,7 @@ const Projects = () => {
                                         contentp.classList.add("hidden")
                                         funcCont.classList.remove("hidden");
                                         setTimeout(() => {
+                                            funcCont.classList.remove("opacity-0");
                                             funcCont.classList.add("opacity-100");
                                         }, 200)
 
