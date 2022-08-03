@@ -7,7 +7,7 @@ import line from "../public/assets/line.svg";
 import {useEffect, useState} from 'react';
 
 const Contact = () => {
-  const [scr, setSrc] = useState(30)
+  const [scr, setSrc] = useState(0)
   const [swidth, setSw] = useState(0)
   const [contactswidth, setContw] = useState(71)
 

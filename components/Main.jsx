@@ -7,8 +7,7 @@ import line from "../public/assets/line.svg";
 import {useEffect, useState} from 'react';
 
 const Main = () => {
-    const [scr, setSrc] = useState(30)
-    console.log("scr",scr)
+    const [scr, setSrc] = useState(0)
     useEffect(()=>{
         const scroll = (event) => {
         setSrc(window.scrollY)
@@ -69,9 +68,9 @@ const Main = () => {
             //     </span> 
             // </div>
     //     </div>
-        <div id="main" className="overflow-x-hidden space-y-8 h-screen flex font-bold flex-col items-center min-w-screen bg-secondary text-white font-sans">
+        <div id="main" className="overflow-x-hidden space-y-8 h-screen flex font-bold flex-col items-start min-w-screen bg-secondary text-white font-sans">
                     <Navbar />
-                    <div className="h-1/3 tracking-tight flex flex-row items-center ml-2 lg:text-laptop">
+                    <div className="bg-red-200 h-1/3 w-auto tracking-tight flex flex-row items-center ml-2 lg:text-laptop">
                         <div className="" style={{}}>
                             <span className="mr-zero text-primary hover:text-primary-light transition-colors">F</span>
                             <span className="mr-zero text-primary hover:text-primary-light transition-colors">R</span>
