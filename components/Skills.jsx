@@ -10,14 +10,14 @@ const Skills = () => {
   const [scr, setSrc] = useState(0)
   const [swidth, setSw] = useState(0)
   const [skillswidth, setSkillw] = useState(71)
-  const [funcCont, setFunc] = useState()
+  const [skillc, setSkillC] = useState()
     // let swidth = window.innerWidth;
     // let projectswidth = document.getElementById("projectsdiv").offsetWidth
     useEffect(()=>{
         const scroll = (event) => {
         // console.log(window.scrollY, swidth)
-        setFunc(document.getElementById("projectscontdiv"))
-
+        
+        setSkillC(document.getElementById("skillcontent"))
         setSrc(window.scrollY)
         setSw(window.innerWidth)
         setSkillw(document.getElementById("skillsdiv").offsetWidth)  
@@ -31,13 +31,17 @@ const Skills = () => {
                           <div id="skillsdiv" className="w-auto" style={{marginLeft: scr<810?-150: (2*scr - 1770)<=(swidth/2 - skillswidth/2)? 2*scr - 1770: (swidth/2 - skillswidth/2)}}>
                           SKILLS
                           </div>
-            </div>
-            
-            {/* <div id="projectscontdiv" className="bg-primary flex justify-center items-center mb-10 w-full h-5/6 font-sans">
-                            <div className="text-xl w-1/2 h-full">
-                                asd
+                          <div id="skillcontent" className="duration-700 transition flex justify-center ssmy-4 ssp-4 w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<150?3000: (3000 - 5*scr)>=(swidth/2 - skillcontent/2)? 3000 - 5*scr: (swidth/2 - skillcontent/2)}}>
+                        <div className="flex flex-col justify-center py-6 px-2 w-3/4 ssbg-gray-800 items-center">
+                                
+                                <div className="flex ssbg-blue-200">
+                                    asd
+
+                                </div>
+
                             </div>
-            </div> */}
+                        </div>
+            </div>
         </div>
     );
 }

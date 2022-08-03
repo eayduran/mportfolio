@@ -26,7 +26,8 @@ module.exports = {
       
       margin: {
         'zero':'-9px',
-        'iki': '-2px'
+        'iki': '-2px',
+        '2000': '2000px',
       },
       divideColor: {
         'primary' : '#777777',

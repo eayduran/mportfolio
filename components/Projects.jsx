@@ -6,13 +6,13 @@ import line from "../public/assets/line.svg";
 import Prj1Jpeg from "../public/assets/main.jpeg";
 
 import {useEffect, useState} from 'react';
-const names = ["whale", "squid", "turtle", "coral", "starfish"];
+
 const pData =[
     {
         img: Prj1Jpeg,
         header: 'Portfolio',
         description: 'I used blabla in this app.',
-        tags: ['nextjs', 'tailwind'],
+        tags: ['NextJS', 'tailwind'],
         website: 'https://react-age-of-empires.netlify.app/',
         source: 'https://github.com/eayduran/react-age-of-empires',
     },
@@ -20,25 +20,25 @@ const pData =[
         img: Prj1Jpeg,
         header: 'E-commerce',
         description: 'I used ee in this app.',
-        tags: ['nextjs', 'tailwind'],
+        tags: ['NextJS', 'tailwind'],
         website: 'https://www.hepsiburada.com',
         source: 'https://github.com/eayduran/rl-walking-robot-gym',
     },
     {
         img: Prj1Jpeg,
-        header: 'React Auth',
+        header: 'To do',
         description: 'I used blabla in this app.',
-        tags: ['ReactNative', 'tailwind'],
+        tags: ['ReactJS', 'tailwind'],
         website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
         source: 'https://github.com/eayduran/react-native-linkedin-auth',
     },
     {
         img: Prj1Jpeg,
-        header: 'To do',
+        header: 'React Auth',
         description: 'I used blabla in this app.',
-        tags: ['nextjs', 'tailwind'],
-        website: 'link',
-        source: 'link',
+        tags: ['React Native', 'tailwind'],
+        website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
+        source: 'https://github.com/eayduran/react-native-linkedin-auth',
     },
     {
         img: Prj1Jpeg,
@@ -73,45 +73,30 @@ const Projects = () => {
   const [wall2, setWall2] = useState()
   const [choosePrj, setChooseP] = useState(0)
 
-  function Books({kitap1, kitap2}) {
+  function Books({kitap1, wid, pad, border, color}) {
     return(
-        <div className="w-280 h-400 border-solid border-b-8 border-l-8 flex flex-col justify-center">
-            <div onClick={()=>{
-                setChooseP(kitap2)
-                funcCont.classList.remove("opacity-100");
-                funcCont.classList.add("opacity-0");
+        <div className="cursor-pointer border-solid w-auto flex flex-col justify-center items-center group" onClick={()=>{
+            setChooseP(kitap1)
+            funcCont.classList.remove("opacity-100");
+            funcCont.classList.add("opacity-0");
+            setTimeout(() => {
+                funcCont.classList.add("hidden");
+                // funcCont.classList.remove("opacity-0");
+                // buraya yeni animasyon eklenecek
+                contentp.classList.remove("hidden")
                 setTimeout(() => {
-                    funcCont.classList.add("hidden");
-                    // funcCont.classList.remove("opacity-0");
-                    // buraya yeni animasyon eklenecek
-                    contentp.classList.remove("hidden")
-                    setTimeout(() => {
-                    wall1.classList.add("-translate-x-3/4")
-                    wall2.classList.add("translate-x-3/4")
-                    }, 100)
-                }, 700)
-            }} className="transition-colors hover:text-black hover:border-black hover:bg-red-200 border-solid border-4 rotate-46 text-4xl left-8 top-28 -mb-3 relative">
-                {pData[kitap2].header}
-            </div>
-            <div onClick={()=>{
-                setChooseP(kitap1)
-                funcCont.classList.remove("opacity-100");
-                funcCont.classList.add("opacity-0");
-                setTimeout(() => {
-                    funcCont.classList.add("hidden");
-                    // funcCont.classList.remove("opacity-0");
-                    // buraya yeni animasyon eklenecek
-                    contentp.classList.remove("hidden")
-                    setTimeout(() => {
-                    wall1.classList.add("-translate-x-3/4")
-                    wall2.classList.add("translate-x-3/4")
-                    }, 100)
-                }, 700)
-            }} className="transition-colors hover:text-black hover:border-black hover:bg-red-200 border-solid border-4 rotate-46 mt-6 mr-2 text-4xl right-6 top-14 relative">
+                wall1.classList.add("-translate-x-3/4")
+                wall2.classList.add("translate-x-3/4")
+                }, 100)
+            }, 700)
+        }}>
+            <div style={{width: wid, paddingLeft: pad, border: border, borderColor: color, borderRightStyle: 'solid'}} className='transition-colors h-20 items-center flex group-hover:text-white text-primary-light hover:bg-primary border-solid text-2xl'>
                 {pData[kitap1].header}
             </div>
-            
+            <div className="text-sm text-primary group-hover:text-turk transition-colors">
+                {pData[kitap1].tags[0]}
             </div>
+        </div>
         );
     }
     // let swidth = window.innerWidth;
@@ -133,35 +118,69 @@ const Projects = () => {
     },[])
     
     return(        
-        <div id="projects" className="pb-8 justify-start overflow-x-hidden space-y-8 h-screen flex flex-col items-center min-w-screen bg-secondary text-white font-sans">
-                    <div className="bg-blue-200s text-white flex items-center justify-start w-full font-bold h-20 text-4xl font-sans z-[100]">
+        <div id="projects" className="pb-8 justify-start overflow-x-hidden space-y-2 h-screen flex flex-col items-center min-w-screen bg-secondary text-white font-sans">
+                    <div className="text-primary-light flex items-center justify-start w-full font-bold h-20 text-4xl font-sans z-[100]">
                                     <div id="projectsdiv" className="w-auto" style={{marginLeft: scr<150?-200: (2*scr - 500)<=(swidth/2 - projectswidth/2)? 2*scr - 500: (swidth/2 - projectswidth/2)}}>
                                         PROJECTS
                                     </div>
                     </div>
-                   
-                    <div id="projectscontdiv" className="duration-700 transition bg-red-200s flex justify-center my-4 p-4 w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<150?3000: (3000 - 5*scr)>=(swidth/2 - projectswidthcont/2)? 3000 - 5*scr: (swidth/2 - projectswidthcont/2)}}>
-                        <div className="flex flex-col justify-between py-6 px-2 w-1/4 bg-gray-800 items-center">
+
+                    <div id="projectscontdiv" className="duration-700 transition flex justify-center w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<150?3000: (3000 - 5*scr)>=(swidth/2 - projectswidthcont/2)? 3000 - 5*scr: (swidth/2 - projectswidthcont/2)}}>
+                        <div className="flex flex-col justify-center py-6 px-2 w-3/4 ssbg-gray-800 items-center">
+                            
+                            <div className="flex ssbg-blue-200">
+                                <Books kitap1={0} wid={180} pad={50} border={2} color="rgb(170,170,170)"/>
+                                <Books kitap1={1} wid={180} pad={20} border={2} color="rgb(170,170,170)"/>
+                                <Books kitap1={2} wid={180} pad={60} border={2} color="rgb(170,170,170)"/>
+                                <Books kitap1={3} wid={180} pad={33} border={2} color="rgb(170,170,170)"/>
+                                <Books kitap1={4} wid={180} pad={20} border={2} color="rgb(170,170,170)"/>
+                                <Books kitap1={5} wid={180} pad={40} border={0} color="rgb(170,170,170)"/>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    {/* <div id="projectscontdiv" className="duration-700 transition flex justify-center ssmy-4 ssp-4 w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<150?3000: (3000 - 5*scr)>=(swidth/2 - projectswidthcont/2)? 3000 - 5*scr: (swidth/2 - projectswidthcont/2)}}>
+                        <div className="flex flex-col justify-center py-6 px-2 w-3/4 bg-gray-800 items-center">
+                            
+                            <div className="flex ssbg-blue-200 divide-x">
+                                <Books kitap1={0}/>
+                                <Books kitap1={1}/>
+                                <Books kitap1={2}/>
+                                <Books kitap1={3}/>
+                                <Books kitap1={4}/>
+                                <Books kitap1={5}/>
+
+                            </div>
+                            <div className="mt-52 flex bg-red-200 justify-center items-center w-5/6">
+                                <div className="mx-20ss bg-blue-200">NextJS</div>
+                                <div className="mx-20ss bg-blue-200">ReactJS</div>
+                                <div className="mx-20ss bg-blue-200">React Native</div>
+                            </div>
+                        </div>
+                    </div> */}
+                    {/* <div id="projectscontdiv" className="duration-700 transition flex justify-center ssmy-4 ssp-4 w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<150?3000: (3000 - 5*scr)>=(swidth/2 - projectswidthcont/2)? 3000 - 5*scr: (swidth/2 - projectswidthcont/2)}}>
+                        <div className="flex flex-col justify-end py-6 px-2 w-1/4 ssbg-gray-800 items-center">
                             <Books kitap1={1} kitap2={0} />
-                            <div>
+                            <div className="mt-52">
                                 NextJS
                             </div>
                         </div>
 
-                        <div className="flex flex-col justify-between py-6 px-2 mx-14 w-1/4 bg-gray-800 items-center">
+                        <div className="flex flex-col justify-end py-6 px-2 mx-4 w-1/4 ssbg-gray-800 items-center">
                             <Books kitap1={3} kitap2={2} />
-                            <div>
+                            <div className="mt-52">
                                 ReactJS
                             </div>
                         </div>
 
-                        <div className="flex flex-col justify-between py-6 px-2 w-1/4 bg-gray-800 items-center">
+                        <div className="flex flex-col justify-end py-6 px-2 w-1/4 ssbg-gray-800 items-center">
                             <Books kitap1={5} kitap2={4} />
-                            <div>
+                            <div className="mt-52">
                                 React Native
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     
                     {/* animasyon */}
                     <div id="contentdiv" className="hidden bg-primary flex justify-center items-center mb-10 w-full h-5/6 text-4xl font-sans">
@@ -192,7 +211,9 @@ const Projects = () => {
                                         />
                                     </div>
                                     <div className="">
-                                        {pData[choosePrj].header}
+                                        <div className="text-4xl">
+                                            {pData[choosePrj].header}
+                                        </div>
                                         <div className="text-sm">
                                             {pData[choosePrj].description}
                                         </div>
