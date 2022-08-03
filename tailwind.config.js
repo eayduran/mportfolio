@@ -10,7 +10,7 @@ module.exports = {
         'primary' : 'rgb(119,119,119)',
         'secondary' : 'rgb(17,17,17)',
         'primary-light' : 'rgb(170,170,170)',
-
+        'turk': 'rgb(0, 222, 222)',
       },
       fill: {
         'primary' : '#777777',

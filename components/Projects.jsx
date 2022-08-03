@@ -6,11 +6,12 @@ import line from "../public/assets/line.svg";
 import Prj1Jpeg from "../public/assets/main.jpeg";
 
 import {useEffect, useState} from 'react';
+const names = ["whale", "squid", "turtle", "coral", "starfish"];
 const pData =[
     {
         img: Prj1Jpeg,
         header: 'Portfolio',
-        statement: 'I used blabla in this app.',
+        description: 'I used blabla in this app.',
         tags: ['nextjs', 'tailwind'],
         website: 'https://react-age-of-empires.netlify.app/',
         source: 'https://github.com/eayduran/react-age-of-empires',
@@ -18,7 +19,7 @@ const pData =[
     {
         img: Prj1Jpeg,
         header: 'E-commerce',
-        statement: 'I used ee in this app.',
+        description: 'I used ee in this app.',
         tags: ['nextjs', 'tailwind'],
         website: 'https://www.hepsiburada.com',
         source: 'https://github.com/eayduran/rl-walking-robot-gym',
@@ -26,7 +27,7 @@ const pData =[
     {
         img: Prj1Jpeg,
         header: 'React Auth',
-        statement: 'I used blabla in this app.',
+        description: 'I used blabla in this app.',
         tags: ['ReactNative', 'tailwind'],
         website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
         source: 'https://github.com/eayduran/react-native-linkedin-auth',
@@ -34,26 +35,26 @@ const pData =[
     {
         img: Prj1Jpeg,
         header: 'To do',
-        statement: 'I used blabla in this app.',
+        description: 'I used blabla in this app.',
         tags: ['nextjs', 'tailwind'],
         website: 'link',
         source: 'link',
     },
     {
         img: Prj1Jpeg,
-        header: 'To do',
-        statement: 'I used blabla in this app.',
-        tags: ['nextjs', 'tailwind'],
-        website: 'link',
-        source: 'link',
+        header: 'Weather App',
+        description: 'I used blabla in this app.',
+        tags: ['React Native', 'tailwind'],
+        website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
+        source: 'https://github.com/eayduran/react-native-linkedin-auth',
     },
     {
         img: Prj1Jpeg,
-        header: 'To do',
+        header: 'Shop App',
         statement: 'I used blabla in this app.',
-        tags: ['nextjs', 'tailwind'],
-        website: 'link',
-        source: 'link',
+        tags: ['React Native', 'tailwind'],
+        website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
+        source: 'https://github.com/eayduran/react-native-linkedin-auth',
     },
 
 ]
@@ -117,7 +118,7 @@ const Projects = () => {
     // let projectswidth = document.getElementById("projectsdiv").offsetWidth
     useEffect(()=>{
         const scroll = (event) => {
-        
+
         setWall1(document.getElementById("wall-1"))
         setWall2(document.getElementById("wall-2"))
         setContentp(document.getElementById("contentdiv"))
@@ -146,40 +147,16 @@ const Projects = () => {
                                 NextJS
                             </div>
                         </div>
-                        <div className="flex flex-col justify-between py-6 px-2 mx-14 w-1/4 bg-gray-800 items-center">
-                        <div className="w-280 h-400 border-solid border-b-8 border-l-8 flex flex-col justify-center">
-                                <div onClick={()=>{
-                                    funcCont.classList.add("opacity-0");
-                                
-                                }} className="transition-colors hover:text-black hover:border-black hover:bg-red-200 border-solid border-4 rotate-46 text-4xl left-8 top-28 -mb-3 relative">
-                                    To Do
-                                </div>
-                                <div onClick={()=>{
-                                    funcCont.classList.add("animate-fade");
 
-                                }} className="transition-colors hover:text-black hover:border-black hover:bg-red-200 border-solid border-4 rotate-46 mt-6 mr-2 text-4xl right-6 top-14 relative">
-                                    E-commerce
-                                </div>
-                            </div>
+                        <div className="flex flex-col justify-between py-6 px-2 mx-14 w-1/4 bg-gray-800 items-center">
+                            <Books kitap1={3} kitap2={2} />
                             <div>
                                 ReactJS
                             </div>
                         </div>
-                        <div className="flex flex-col justify-between py-6 px-2 w-1/4 bg-gray-800 items-center">
-                        <div className="w-280 h-400 border-solid border-b-8 border-l-8 flex flex-col justify-center">
-                                <div onClick={()=>{
-                                    funcCont.classList.add("opacity-0");
-                                
-                                }} className="transition-colors hover:text-black hover:border-black hover:bg-red-200 border-solid border-4 rotate-46 text-4xl left-8 top-28 -mb-3 relative">
-                                    Portfolio
-                                </div>
-                                <div onClick={()=>{
-                                    funcCont.classList.add("animate-fade");
 
-                                }} className="transition-colors hover:text-black hover:border-black hover:bg-red-200 border-solid border-4 rotate-46 mt-6 mr-2 text-4xl right-6 top-14 relative">
-                                    E-commerce
-                                </div>
-                            </div>
+                        <div className="flex flex-col justify-between py-6 px-2 w-1/4 bg-gray-800 items-center">
+                            <Books kitap1={5} kitap2={4} />
                             <div>
                                 React Native
                             </div>
@@ -205,7 +182,7 @@ const Projects = () => {
                                         
                                     }} className="bg-black w-auto">Go back</div>
                                 </div>
-                                <div className="flex items-center justify-center bg-red-200">
+                                <div className="flex items-center justify-center bg-red-200s">
                                     <div className="mr-20 h-80 flex items-center">
                                         <Image
                                             src={pData[choosePrj].img}
@@ -217,7 +194,10 @@ const Projects = () => {
                                     <div className="">
                                         {pData[choosePrj].header}
                                         <div className="text-sm">
-                                            {pData[choosePrj].statement}
+                                            {pData[choosePrj].description}
+                                        </div>
+                                        <div className="text-sm text-turk flex flex-row">
+                                            {pData[choosePrj].tags.map( (name,key) => <div className="mr-2" key={key}>{name}</div>)}
                                         </div>
                                         <div className="flex text-sm mt-8">
                                                 <a href={pData[choosePrj].website} target="_blank" rel="noopener noreferrer">
