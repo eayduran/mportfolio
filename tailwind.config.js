@@ -36,6 +36,24 @@ module.exports = {
       rotate: {
         '46':'46deg',
       },
+      height:{
+        '400': '400px'
+      },
+      width:{
+        '280': '280px'
+      },
+      // that is animation class
+      animation: {
+        fade: 'fadeOut 1s ease-in-out',
+      },
+
+      // that is actual animation
+      keyframes: theme => ({
+        fadeOut: {
+          '0%': { backgroundColor: theme('colors.green.300') },
+          '100%': { backgroundColor: theme('colors.transparent') },
+        },
+      }),
     },
   },
   plugins: [
