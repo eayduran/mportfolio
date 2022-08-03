@@ -33,6 +33,9 @@ module.exports = {
         'secondary' : 'rgb(17,17,17)',
         'primary-light' : 'rgb(170,170,170)',
       },
+      rotate: {
+        '46':'46deg',
+      },
     },
   },
   plugins: [
