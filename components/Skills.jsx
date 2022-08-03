@@ -26,7 +26,7 @@ const Skills = () => {
     return(        
         <div id="skills" className="overflow-x-hidden calc-height flex w-full flex-col h-screen bg-secondary">
             <div className="text-white flex items-center justify-start w-full h-20 text-4xl font-sans">
-                          <div id="skillsdiv" className="w-auto" style={{marginLeft: scr<984?-150: (2*scr - 2118)<=(swidth/2 - skillswidth/2)? 2*scr - 2118: (swidth/2 - skillswidth/2)}}>
+                          <div id="skillsdiv" className="w-auto" style={{marginLeft: scr<810?-150: (2*scr - 1770)<=(swidth/2 - skillswidth/2)? 2*scr - 1770: (swidth/2 - skillswidth/2)}}>
                           SKILLS
                           </div>
             </div>

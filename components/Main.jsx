@@ -70,7 +70,7 @@ const Main = () => {
     //     </div>
         <div id="main" className="overflow-x-hidden space-y-8 h-screen flex font-bold flex-col items-start min-w-screen bg-secondary text-white font-sans">
                     <Navbar />
-                    <div className="bg-red-200 h-1/3 w-auto tracking-tight flex flex-row items-center ml-2 lg:text-laptop">
+                    <div className="h-1/3 w-auto tracking-tight flex flex-row items-center ml-2 lg:text-laptop">
                         <div className="" style={{}}>
                             <span className="mr-zero text-primary hover:text-primary-light transition-colors">F</span>
                             <span className="mr-zero text-primary hover:text-primary-light transition-colors">R</span>

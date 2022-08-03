@@ -26,7 +26,7 @@ const Contact = () => {
     return(        
         <div id="contact" className="overflow-x-hidden flex w-full flex-col h-screen bg-secondary">
             <div className="bg-secondary text-white flex items-center justify-start w-full h-20 text-4xl font-sans">
-                          <div id="contactsdiv" className="w-auto" style={{marginLeft: scr<1792?-200: (2*scr - 3784)<=(swidth/2 - contactswidth/2)? 2*scr - 3784: (swidth/2 - contactswidth/2)}}>
+                          <div id="contactsdiv" className="w-auto" style={{marginLeft: scr<1492?-200: (2*scr - 3184)<=(swidth/2 - contactswidth/2)? 2*scr - 3184: (swidth/2 - contactswidth/2)}}>
                           CONTACT
                           </div>
             </div>
