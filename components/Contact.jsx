@@ -35,7 +35,7 @@ const Contact = () => {
 
             <div id="contactc" className="mt-8 w-3/4 h-3/4 bg-red-200ss text-primary-light flex flex-col justify-center items-center text-xl" style={{marginLeft: scr<1492?3200: (5035 - 2.25*scr)>=(swidth/2 - contactc/2)? 5035 - 2.25*scr: (swidth/2 - contactc/2)}}>
 
-                <div>
+                <div className="animate-pulse">
                     Feel free to reach out.
                 </div>
 
