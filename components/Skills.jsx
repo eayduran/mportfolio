@@ -27,82 +27,82 @@ const Skills = () => {
     },[])
     return(        
         <div id="skills" className="overflow-x-hidden flex w-full flex-col h-screen bg-secondary">
-            <div className="text-white flex items-center justify-start w-full h-20 text-4xl font-sans">
+            <div className="text-primary-light flex items-center justify-start font-bold w-full h-20 text-4xl font-sans">
                     <div id="skillsdiv" className="w-auto" style={{marginLeft: scr<810?-150: (2*scr - 1770)<=(swidth/2 - skillswidth/2)? 2*scr - 1770: (swidth/2 - skillswidth/2)}}>
                     SKILLS
                     </div>
             </div>
 
-            <div id="skillcontent" className="mt-8 w-3/4 h-3/4 bg-red-200ss text-white flex flex-col justify-center items-center" style={{marginLeft: scr<810?3200: (3200 - 2.5*scr)>=(swidth/2 - skillc/2)? 3200 - 2.5*scr: (swidth/2 - skillc/2)}}>
+            <div id="skillcontent" className="mt-8 w-3/4 h-3/4 bg-red-200ss text-primary-light flex flex-col justify-center items-center text-xl" style={{marginLeft: scr<810?3200: (3200 - 2.5*scr)>=(swidth/2 - skillc/2)? 3200 - 2.5*scr: (swidth/2 - skillc/2)}}>
                 <div className="flex flex-row w-full h-20 justify-center">
-                    <div className="border-r-2 border-white mr-20 w-1/6 h-full justify-center items-center flex">
-                        Skills
+                    <div className="border-r-2 border-primary-light mr-20 w-1/6 h-full justify-center items-center flex">
+                        Frontend
                     </div>
                     <div className="w-1/6 h-full justify-center items-center flex">
-                        Skill
+                        NextJS
                     </div>
                     <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
                         ReactJS
                     </div>
                     <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
-                        NextJS
+                        Tailwind
                     </div>
                     <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
-                        Tailwind
+                        Bootstrap
                     </div>
                 </div>
                 
                 <div className="mt-10 flex flex-row w-full h-20 justify-center">
-                    <div className="border-r-2 border-white mr-20 w-1/6 h-full justify-center items-center flex">
-                        Skills
+                    <div className="border-r-2 border-primary-light mr-20 w-1/6 h-full justify-center items-center flex">
+                        Backend
                     </div>
                     <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
-                        Skill
+                        NodeJS
                     </div>
                     <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
-                        ReactJS
+                        ExpressJS
                     </div>
                     <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
-                        NextJS
+                        
                     </div>
                     <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
-                        Tailwind
+                        
                     </div>
                 </div>
 
                 <div className="mt-10 flex flex-row w-full h-20 justify-center">
-                    <div className="border-r-2 border-white mr-20 w-1/6 h-full justify-center items-center flex">
-                        Skills
+                    <div className="border-r-2 border-primary-light mr-20 w-1/6 h-full justify-center items-center flex">
+                        Database
                     </div>
                     <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
-                        Skill
+                        MySQL
                     </div>
                     <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
-                        ReactJS
+                        MongoDB
                     </div>
                     <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
-                        NextJS
+                        Firestore
                     </div>
                     <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
-                        Tailwind
+                        
                     </div>
                 </div>
 
                 <div className="mt-10 flex flex-row w-full h-20 justify-center">
-                    <div className="border-r-2 border-white mr-20 w-1/6 h-full justify-center items-center flex">
-                        Skills
-                    </div>
-                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
-                        Skill
+                    <div className="border-r-2 border-primary-light mr-20 w-1/6 h-full justify-center items-center flex">
+                        Other Skills
                     </div>
                     <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
-                        ReactJS
+                        React Native
                     </div>
                     <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
-                        NextJS
+                        Wordpress
+                    </div>
+                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                        Python
                     </div>
                     <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
-                        Tailwind
+                        C++
                     </div>
                 </div>
 
