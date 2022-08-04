@@ -22,20 +22,26 @@ const Navbar = () => {
                 </Link>
                 
                 <div>
-                    <ul className='text-primary flex items-center justify-between font-semibold sm:gap-8'>
+                    <ul className='text-primary flex items-center justify-between font-light sm:gap-8'>
 
-                        <li className='cursor-pointer hover:text-primary-light hover:underline hover:decoration-2 hover:underline-offset-4'>
-                        <Link href='/#projects'>Projects</Link>
-                        </li>
+                        <Link href='/#projects'>
+                            <li className='cursor-pointer hover:text-primary-light hover:underline hover:decoration-2 hover:underline-offset-4'>
+                                Projects
+                            </li>
+                        </Link>
 
-                        <li className='cursor-pointer hover:text-primary-light hover:underline hover:decoration-2 hover:underline-offset-4'>
-                        <Link href='/#skills'>Skills</Link>
-                        </li>
+                        <Link href='/#skills'>
+                            <li className='cursor-pointer hover:text-primary-light hover:underline hover:decoration-2 hover:underline-offset-4'>
+                                Skills
+                            </li>
+                        </Link>
                         
-                        <li className='text-slate-50 cursor-pointer transition hover:duration-300 hover:text-secondary hover:bg-slate-50 border-solid border-2 rounded-lg px-1'>
-                        <Link href='/#contact'>Contact</Link>
-                        </li>
-                    
+                        <Link href='/#contact'>
+                            <li className='rounded-full text-slate-50 cursor-pointer text-bold transition hover:duration-300 hover:text-secondary hover:bg-slate-50 border-solid border-2 rounded-lg px-2'>
+                                Contact
+                            </li>
+                        </Link>
+
                     </ul>
                 </div>
 

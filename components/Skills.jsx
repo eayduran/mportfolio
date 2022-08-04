@@ -17,7 +17,7 @@ const Skills = () => {
         const scroll = (event) => {
         // console.log(window.scrollY, swidth)
         
-        setSkillC(document.getElementById("skillcontent"))
+        setSkillC(document.getElementById("skillcontent").offsetWidth)
         setSrc(window.scrollY)
         setSw(window.innerWidth)
         setSkillw(document.getElementById("skillsdiv").offsetWidth)  
@@ -28,19 +28,86 @@ const Skills = () => {
     return(        
         <div id="skills" className="overflow-x-hidden flex w-full flex-col h-screen bg-secondary">
             <div className="text-white flex items-center justify-start w-full h-20 text-4xl font-sans">
-                          <div id="skillsdiv" className="w-auto" style={{marginLeft: scr<810?-150: (2*scr - 1770)<=(swidth/2 - skillswidth/2)? 2*scr - 1770: (swidth/2 - skillswidth/2)}}>
-                          SKILLS
-                          </div>
-                          <div id="skillcontent" className="duration-700 transition flex justify-center ssmy-4 ssp-4 w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<150?3000: (3000 - 5*scr)>=(swidth/2 - skillcontent/2)? 3000 - 5*scr: (swidth/2 - skillcontent/2)}}>
-                        <div className="flex flex-col justify-center py-6 px-2 w-3/4 ssbg-gray-800 items-center">
-                                
-                                <div className="flex ssbg-blue-200">
-                                    asd
+                    <div id="skillsdiv" className="w-auto" style={{marginLeft: scr<810?-150: (2*scr - 1770)<=(swidth/2 - skillswidth/2)? 2*scr - 1770: (swidth/2 - skillswidth/2)}}>
+                    SKILLS
+                    </div>
+            </div>
 
-                                </div>
+            <div id="skillcontent" className="mt-8 w-3/4 h-3/4 bg-red-200ss text-white flex flex-col justify-center items-center" style={{marginLeft: scr<810?3200: (3200 - 2.5*scr)>=(swidth/2 - skillc/2)? 3200 - 2.5*scr: (swidth/2 - skillc/2)}}>
+                <div className="flex flex-row w-full h-20 justify-center">
+                    <div className="border-r-2 border-white mr-20 w-1/6 h-full justify-center items-center flex">
+                        Skills
+                    </div>
+                    <div className="w-1/6 h-full justify-center items-center flex">
+                        Skill
+                    </div>
+                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                        ReactJS
+                    </div>
+                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                        NextJS
+                    </div>
+                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                        Tailwind
+                    </div>
+                </div>
+                
+                <div className="mt-10 flex flex-row w-full h-20 justify-center">
+                    <div className="border-r-2 border-white mr-20 w-1/6 h-full justify-center items-center flex">
+                        Skills
+                    </div>
+                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                        Skill
+                    </div>
+                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                        ReactJS
+                    </div>
+                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                        NextJS
+                    </div>
+                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                        Tailwind
+                    </div>
+                </div>
 
-                            </div>
-                        </div>
+                <div className="mt-10 flex flex-row w-full h-20 justify-center">
+                    <div className="border-r-2 border-white mr-20 w-1/6 h-full justify-center items-center flex">
+                        Skills
+                    </div>
+                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                        Skill
+                    </div>
+                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                        ReactJS
+                    </div>
+                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                        NextJS
+                    </div>
+                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                        Tailwind
+                    </div>
+                </div>
+
+                <div className="mt-10 flex flex-row w-full h-20 justify-center">
+                    <div className="border-r-2 border-white mr-20 w-1/6 h-full justify-center items-center flex">
+                        Skills
+                    </div>
+                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                        Skill
+                    </div>
+                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                        ReactJS
+                    </div>
+                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                        NextJS
+                    </div>
+                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                        Tailwind
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     );

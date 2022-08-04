@@ -3,7 +3,9 @@ import Image from "next/image";
 import Navbar from "./Navbar"
 import MainSVG from "../public/assets/Main.svg";
 import line from "../public/assets/line.svg";
+import Back from "../public/assets/back.svg";
 import Prj1Jpeg from "../public/assets/main.jpeg";
+import mordesign from "../public/assets/mordesign.jpeg";
 
 import {useEffect, useState} from 'react';
 
@@ -11,15 +13,15 @@ const pData =[
     {
         img: Prj1Jpeg,
         header: 'Portfolio',
-        description: 'I used blabla in this app.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
         tags: ['NextJS', 'tailwind'],
         website: 'https://react-age-of-empires.netlify.app/',
         source: 'https://github.com/eayduran/react-age-of-empires',
     },
     {
-        img: Prj1Jpeg,
+        img: mordesign,
         header: 'E-commerce',
-        description: 'I used ee in this app.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
         tags: ['NextJS', 'tailwind'],
         website: 'https://www.hepsiburada.com',
         source: 'https://github.com/eayduran/rl-walking-robot-gym',
@@ -27,7 +29,7 @@ const pData =[
     {
         img: Prj1Jpeg,
         header: 'To do',
-        description: 'I used blabla in this app.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
         tags: ['ReactJS', 'tailwind'],
         website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
         source: 'https://github.com/eayduran/react-native-linkedin-auth',
@@ -35,7 +37,7 @@ const pData =[
     {
         img: Prj1Jpeg,
         header: 'React Auth',
-        description: 'I used blabla in this app.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
         tags: ['React Native', 'tailwind'],
         website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
         source: 'https://github.com/eayduran/react-native-linkedin-auth',
@@ -43,7 +45,7 @@ const pData =[
     {
         img: Prj1Jpeg,
         header: 'Weather App',
-        description: 'I used blabla in this app.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
         tags: ['React Native', 'tailwind'],
         website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
         source: 'https://github.com/eayduran/react-native-linkedin-auth',
@@ -51,7 +53,7 @@ const pData =[
     {
         img: Prj1Jpeg,
         header: 'Shop App',
-        statement: 'I used blabla in this app.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
         tags: ['React Native', 'tailwind'],
         website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
         source: 'https://github.com/eayduran/react-native-linkedin-auth',
@@ -128,7 +130,7 @@ const Projects = () => {
                     <div id="projectscontdiv" className="duration-700 transition flex justify-center w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<150?3000: (3000 - 5*scr)>=(swidth/2 - projectswidthcont/2)? 3000 - 5*scr: (swidth/2 - projectswidthcont/2)}}>
                         <div className="flex flex-col justify-center py-6 px-2 w-3/4 ssbg-gray-800 items-center">
                             
-                            <div className="flex ssbg-blue-200">
+                            <div className="flex">
                                 <Books kitap1={0} wid={180} pad={50} border={2} color="rgb(170,170,170)"/>
                                 <Books kitap1={1} wid={180} pad={20} border={2} color="rgb(170,170,170)"/>
                                 <Books kitap1={2} wid={180} pad={60} border={2} color="rgb(170,170,170)"/>
@@ -140,48 +142,7 @@ const Projects = () => {
 
                         </div>
                     </div>
-                    {/* <div id="projectscontdiv" className="duration-700 transition flex justify-center ssmy-4 ssp-4 w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<150?3000: (3000 - 5*scr)>=(swidth/2 - projectswidthcont/2)? 3000 - 5*scr: (swidth/2 - projectswidthcont/2)}}>
-                        <div className="flex flex-col justify-center py-6 px-2 w-3/4 bg-gray-800 items-center">
-                            
-                            <div className="flex ssbg-blue-200 divide-x">
-                                <Books kitap1={0}/>
-                                <Books kitap1={1}/>
-                                <Books kitap1={2}/>
-                                <Books kitap1={3}/>
-                                <Books kitap1={4}/>
-                                <Books kitap1={5}/>
-
-                            </div>
-                            <div className="mt-52 flex bg-red-200 justify-center items-center w-5/6">
-                                <div className="mx-20ss bg-blue-200">NextJS</div>
-                                <div className="mx-20ss bg-blue-200">ReactJS</div>
-                                <div className="mx-20ss bg-blue-200">React Native</div>
-                            </div>
-                        </div>
-                    </div> */}
-                    {/* <div id="projectscontdiv" className="duration-700 transition flex justify-center ssmy-4 ssp-4 w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<150?3000: (3000 - 5*scr)>=(swidth/2 - projectswidthcont/2)? 3000 - 5*scr: (swidth/2 - projectswidthcont/2)}}>
-                        <div className="flex flex-col justify-end py-6 px-2 w-1/4 ssbg-gray-800 items-center">
-                            <Books kitap1={1} kitap2={0} />
-                            <div className="mt-52">
-                                NextJS
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col justify-end py-6 px-2 mx-4 w-1/4 ssbg-gray-800 items-center">
-                            <Books kitap1={3} kitap2={2} />
-                            <div className="mt-52">
-                                ReactJS
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col justify-end py-6 px-2 w-1/4 ssbg-gray-800 items-center">
-                            <Books kitap1={5} kitap2={4} />
-                            <div className="mt-52">
-                                React Native
-                            </div>
-                        </div>
-                    </div> */}
-                    
+                 
                     {/* animasyon */}
                     <div id="contentdiv" className="hidden bg-primary flex justify-center items-center mb-10 w-full h-5/6 text-4xl font-sans">
                         <div className="flex flex-col justify-between text-white z-20 absolute w-3/4 h-3/4">
@@ -199,22 +160,31 @@ const Projects = () => {
 
                                         }, 600)
                                         
-                                    }} className="bg-black w-auto">Go back</div>
+                                    }} className="w-auto flex hover:cursor-pointer items-center justify-center">
+                                    <Image
+                                            src={Back}
+                                            alt="back"
+                                            width={60}
+                                            height={40}
+                                        />
+                                    </div>
                                 </div>
-                                <div className="flex items-center justify-center bg-red-200s">
-                                    <div className="mr-20 h-80 flex items-center">
+                                <div className="flex items-center justify-center ssbg-red-200">
+                                    <div className="ml-8 mr-10 flex items-center h-2/5 w-2/5">
                                         <Image
                                             src={pData[choosePrj].img}
                                             alt="Picture of the author"
-                                            width={300}
-                                            height={300}
+                                            // width={500}
+                                            // height={300}
+                                            // layout='fill'
+                                            objectFit='contain'
                                         />
                                     </div>
-                                    <div className="">
+                                    <div className="w-2/5 bg-red-200s">
                                         <div className="text-4xl">
                                             {pData[choosePrj].header}
                                         </div>
-                                        <div className="text-sm">
+                                        <div className="text-sm mt-4">
                                             {pData[choosePrj].description}
                                         </div>
                                         <div className="text-sm text-turk flex flex-row">
@@ -222,12 +192,12 @@ const Projects = () => {
                                         </div>
                                         <div className="flex text-sm mt-8">
                                                 <a href={pData[choosePrj].website} target="_blank" rel="noopener noreferrer">
-                                                    <div className="mr-4">
+                                                    <div className="mr-4 hover:bg-white duration-500 transition-color hover:text-primary rounded-2xl py-1 px-3 border-white border-2">
                                                         Website
                                                     </div>
                                                 </a>
                                                 <a href={pData[choosePrj].source} target="_blank" rel="noopener noreferrer">
-                                                    <div className="">
+                                                    <div className="hover:bg-white duration-500 transition-color hover:text-primary rounded-2xl py-1 px-3 border-white border-2">
                                                         Code
                                                     </div>
                                                 </a>

@@ -38,6 +38,7 @@ const Main = () => {
                             <span className="text-primary hover:text-primary-light transition-colors">D</span>
                         </div>
                     </div>
+                    {/* <div className="flex items-center w-full justify-center">junior</div> */}
                     <div className="h-1/3 flex justify-end items-center w-full lg:text-laptop">
                         <div className="tracking-tight" style={{marginRight: 2*scr}}>
                             <span className="mr-zero text-primary hover:text-primary-light transition-colors">D</span>
