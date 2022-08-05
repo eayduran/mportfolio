@@ -5,10 +5,10 @@ const Navbar = () => {
 
     return(
         <div className="w-full h-20 z-[100] bg-secondary text-xl font-sans">
-            <div className="flex justify-between items-center w-full h-full 2xl:px-16 px-6">
+            <div className="flex justify-center sm:justify-between items-center w-full h-full 2xl:px-16 px-6">
                 
                 <Link href='/'>
-                    <a className="hidden md:flex">
+                    <a className="hidden sm:flex">
                         {/* <Image src="/../public/assets/logo.jpeg" alt="logo" width={50} height={50}/> */}
                         <div className="text-lg hover:text-primary-light text-primary">
                             <div>
@@ -31,7 +31,7 @@ const Navbar = () => {
                         </Link>
 
                         <Link href='/#skills'>
-                            <li className='cursor-pointer hover:text-primary-light hover:underline hover:decoration-2 hover:underline-offset-4'>
+                            <li className='mx-8 sm:mx-0 cursor-pointer hover:text-primary-light hover:underline hover:decoration-2 hover:underline-offset-4'>
                                 Skills
                             </li>
                         </Link>

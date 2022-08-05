@@ -18,16 +18,24 @@ module.exports = {
         'primary-light' : 'rgb(170,170,170)',
       },
       fontSize: {
-        'laptop' : '13em',
+        'laptop' : '13rem',
+        'tablet' : '120px',
+        'mobile' : '50px',
       },
       fontFamily: {
         bebas: ["Bebas", "sans-serif"],
       },
-      
+      screens: {
+        'laptop' : '1200px',
+        'tablet' : '640px',
+      },
       margin: {
         'zero':'-9px',
         'iki': '-2px',
         '2000': '2000px',
+      },
+      padding:{
+        'dev': '190px'
       },
       divideColor: {
         'primary' : '#777777',
@@ -38,7 +46,8 @@ module.exports = {
         '46':'46deg',
       },
       height:{
-        '400': '400px'
+        '400': '400px',
+        '240': '100px'
       },
       width:{
         '280': '280px'

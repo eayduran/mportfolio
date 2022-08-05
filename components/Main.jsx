@@ -16,44 +16,44 @@ const Main = () => {
         return  () => window.removeEventListener("scroll", scroll, false);
     },[])
     return(        
-        <div id="main" className="justify-between overflow-x-hidden space-y-8 h-screen flex font-bold flex-col items-start min-w-screen bg-secondary text-white font-sans">
+        <div id="main" className="justify-between overflow-x-hidden space-y-8 h-screen flex font-bold flex-col items-center sm:items-start min-w-screen bg-secondary text-white font-sans">
                     <Navbar />
-                    <div className="h-1/3 w-auto tracking-tight flex flex-row items-center ml-2 lg:text-laptop">
+                    <div className="sm:1/4 sm:ml-6 sm:text-tablet lg:text-laptop text-mobile lg:h-1/3 lg:w-auto tracking-tight flex flex-row items-center">
                         <div className="" style={{}}>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">F</span>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">R</span>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">O</span>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">N</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">F</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">R</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">O</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">N</span>
                             <span className="text-primary hover:text-primary-light transition-colors">T</span>
                         </div>
 
                         {/* line */}
-                        <div className="hover:bg-primary-light text-white bg-primary mx-4" style={{height: 28 ,width: 240 + 2*scr}}>
+                        <div className="hidden lg:flex hover:bg-primary-light text-white bg-primary mx-4" style={{height: 28 ,width: 240 + 2*scr}}>
                         
                         </div>
             
                         <div>
-                            <span className="text-primary hover:text-primary-light transition-colors">E</span>
-                            <span className="text-primary hover:text-primary-light transition-colors">N</span>
-                            <span className="text-primary hover:text-primary-light transition-colors">D</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">E</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">N</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">D</span>
                         </div>
                     </div>
                     {/* <div className="flex items-center w-full justify-center">junior</div> */}
-                    <div className="h-1/3 flex justify-end items-center w-full lg:text-laptop">
-                        <div className="tracking-tight" style={{marginRight: 2*scr}}>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">D</span>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">E</span>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">V</span>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">E</span>
-                            <span className="mx-zero text-primary hover:text-primary-light transition-colors">L</span>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">O</span>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">P</span>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">E</span>
-                            <span className="mr-zero text-primary hover:text-primary-light transition-colors">R</span>
+                    <div className="h-1/3 flex justify-center sm:justify-between lg:justify-end items-center sm:items-start lg:items-center w-full sm:ml-6 flex-col sm:flex-row sm:text-tablet lg:text-laptop">
+                        <div className="text-mobile lg:text-laptop tracking-tight" style={{marginRight: 2*scr}}>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">D</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">E</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">V</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">E</span>
+                            <span className="lg:mx-zero text-primary hover:text-primary-light transition-colors">L</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">O</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">P</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">E</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">R</span>
                         </div>
-                        <div className="">
-                            <div className="flex flex-col w-52 text-primary-light bg-secondary text-6xl ml-16 font-sans font-light mr-4">
-                                About 
+                        <div className="mt-10 sm:mt-20 lg:mt-0 sm:mr-10">
+                            <div className="flex flex-col text-center w-52 text-primary-light bg-secondary text-3xl sm:text-6xl sm:ml-16 font-sans font-light sm:mr-4">
+                                    About 
                                 <span className="text-sm mt-4">
                                 I`m a front-end developer building scalable, performant, and responsive websites located in Istanbul. Currently, I`m producing useful UI and webpages at Adesso Turkey.
                                 </span>
