@@ -7,7 +7,7 @@ export default function Upbutton({scr}) {
        {/* { scr > 600 ?  */}
        <Link href='/#main'>
             {/* <Image src={tri} height={50} width={50} alt="Go up button" /> */}  
-            <div className="transition duration-700 fixed bottom-12 right-12 w-20 h-20 z-50" style={{visibility: scr < 500? 'hidden':'visible', opacity: scr < 600? '0':'1'}}>
+            <div className="transition duration-700 fixed bottom-4 right-4 w-16 h-16 sm:bottom-12 sm:right-12 sm:w-20 sm:h-20 z-50" style={{visibility: scr < 500? 'hidden':'visible', opacity: scr < 600? '0':'1'}}>
                 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
                     <line stroke="rgb(0, 222, 222)" strokeWidth={15} strokeLinecap="round" x1="225.108" y1="45.126" x2="26.764" y2="384.775"></line>
                     <line stroke="rgb(0, 222, 222)" strokeWidth={14} strokeLinecap="round" x1="26.476" y1="385.734" x2="55.288" y2="432.684"></line>

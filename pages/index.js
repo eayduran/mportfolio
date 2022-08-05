@@ -13,7 +13,9 @@ import {useEffect, useState} from 'react';
 
 export default function Home() {
   const [scr, setSrc] = useState(0)
+  const [scwidth, setScwidth] = useState(0)
   useEffect(()=>{
+    setScwidth(window.innerWidth)
     const scroll = (event) => {
       setSrc(window.scrollY)
     }
@@ -25,7 +27,7 @@ export default function Home() {
     <div className="font-mono divide-y divide-primary">
       <Main />
       {/* <About /> */}
-      <Projects />
+      <Projects screenwidth={scwidth}/>
       <Skills />
       <Contact />
       <div className="divide-none">

@@ -11,9 +11,9 @@ import {useEffect, useState} from 'react';
 
 const pData =[
     {
-        img: Prj1Jpeg,
+        img: mordesign,
         header: 'Portfolio',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
         tags: ['NextJS', 'tailwind'],
         website: 'https://react-age-of-empires.netlify.app/',
         source: 'https://github.com/eayduran/react-age-of-empires',
@@ -21,39 +21,39 @@ const pData =[
     {
         img: mordesign,
         header: 'E-commerce',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
         tags: ['NextJS', 'tailwind'],
         website: 'https://www.hepsiburada.com',
         source: 'https://github.com/eayduran/rl-walking-robot-gym',
     },
     {
-        img: Prj1Jpeg,
+        img: mordesign,
         header: 'To do',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
         tags: ['ReactJS', 'tailwind'],
         website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
         source: 'https://github.com/eayduran/react-native-linkedin-auth',
     },
     {
-        img: Prj1Jpeg,
+        img: mordesign,
         header: 'React Auth',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
         tags: ['React Native', 'tailwind'],
         website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
         source: 'https://github.com/eayduran/react-native-linkedin-auth',
     },
     {
-        img: Prj1Jpeg,
+        img: mordesign,
         header: 'Weather App',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
         tags: ['React Native', 'tailwind'],
         website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
         source: 'https://github.com/eayduran/react-native-linkedin-auth',
     },
     {
-        img: Prj1Jpeg,
+        img: mordesign,
         header: 'Shop App',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
         tags: ['React Native', 'tailwind'],
         website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
         source: 'https://github.com/eayduran/react-native-linkedin-auth',
@@ -64,7 +64,7 @@ const pData =[
 
 
 
-const Projects = () => {
+const Projects = ({screenwidth}) => {
   const [scr, setSrc] = useState(0)
   const [swidth, setSw] = useState(0)
   const [projectswidth, setPrjw] = useState(71)
@@ -130,13 +130,19 @@ const Projects = () => {
                     <div id="projectscontdiv" className="duration-700 transition flex justify-center w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<150?3000: (3000 - 5*scr)>=(swidth/2 - projectswidthcont/2)? 3000 - 5*scr: (swidth/2 - projectswidthcont/2)}}>
                         <div className="flex flex-col justify-center py-6 px-2 w-3/4 ssbg-gray-800 items-center">
                             
-                            <div className="flex">
-                                <Books kitap1={0} wid={180} pad={50} border={2} color="rgb(170,170,170)"/>
-                                <Books kitap1={1} wid={180} pad={20} border={2} color="rgb(170,170,170)"/>
-                                <Books kitap1={2} wid={180} pad={60} border={2} color="rgb(170,170,170)"/>
-                                <Books kitap1={3} wid={180} pad={33} border={2} color="rgb(170,170,170)"/>
-                                <Books kitap1={4} wid={180} pad={20} border={2} color="rgb(170,170,170)"/>
-                                <Books kitap1={5} wid={180} pad={40} border={0} color="rgb(170,170,170)"/>
+                            <div className="flex flex-col lg:flex-row">
+                                <div className="flex">
+                                    <Books kitap1={0} wid={180} pad={50} border={2} color="rgb(170,170,170)"/>
+                                    <Books kitap1={1} wid={180} pad={20} border={screenwidth<1024?0:2} color="rgb(170,170,170)"/>
+                                </div>
+                                <div className="flex">
+                                    <Books kitap1={2} wid={180} pad={60} border={2} color="rgb(170,170,170)"/>
+                                    <Books kitap1={3} wid={180} pad={33} border={screenwidth<1024?0:2} color="rgb(170,170,170)"/>
+                                </div>
+                                <div className="flex">
+                                    <Books kitap1={4} wid={180} pad={20} border={2} color="rgb(170,170,170)"/>
+                                    <Books kitap1={5} wid={180} pad={40} border={0} color="rgb(170,170,170)"/>
+                                </div>
 
                             </div>
 
@@ -144,7 +150,7 @@ const Projects = () => {
                     </div>
                  
                     {/* animasyon */}
-                    <div id="contentdiv" className="hidden bg-primary flex justify-center items-center mb-10 w-full h-5/6 text-4xl font-sans">
+                    <div id="contentdiv" className="hidden bg-primary flex justify-center items-center mb-10 w-full h-5/6 font-xs sm:text-4xl font-sans">
                         <div className="flex flex-col justify-between text-white z-20 absolute w-3/4 h-3/4">
                                 <div className="pl-4 flex">
                                     <div onClick={()=>{
@@ -169,8 +175,8 @@ const Projects = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="flex items-center justify-center ssbg-red-200">
-                                    <div className="ml-8 mr-10 flex items-center h-2/5 w-2/5">
+                                <div className="flex flex-col lg:flex-row items-center justify-center ssbg-red-200">
+                                    <div className="mt-2 lg:ml-8 lg:mr-10 flex items-center sm:h-1/2 sm:w-1/2 lg:h-2/5 lg:w-2/5 h-5/6 w-5/6">
                                         <Image
                                             src={pData[choosePrj].img}
                                             alt="Picture of the author"
@@ -180,17 +186,17 @@ const Projects = () => {
                                             objectFit='contain'
                                         />
                                     </div>
-                                    <div className="w-2/5 bg-red-200s">
-                                        <div className="text-4xl">
+                                    <div className="w-5/6 bg-red-200s sm:mt-6 lg:mt-0">
+                                        <div className="text-center mt-2 sm:mt-0 sm:text-4xl text-2xl">
                                             {pData[choosePrj].header}
                                         </div>
-                                        <div className="text-sm mt-4">
+                                        <div className="text-xs sm:text-sm mt-2 sm:mt-4">
                                             {pData[choosePrj].description}
                                         </div>
-                                        <div className="text-sm text-turk flex flex-row">
+                                        <div className="text-xs sm:text-sm lg:mt-0 mt-2 text-turk flex flex-row">
                                             {pData[choosePrj].tags.map( (name,key) => <div className="mr-2" key={key}>{name}</div>)}
                                         </div>
-                                        <div className="flex text-sm mt-8">
+                                        <div className="flex text-sm lg:mt-8 sm:mt-4 mt-2 justify-center sm:justify-start">
                                                 <a href={pData[choosePrj].website} target="_blank" rel="noopener noreferrer">
                                                     <div className="mr-4 hover:bg-white duration-500 transition-color hover:text-primary rounded-2xl py-1 px-3 border-white border-2">
                                                         Website
