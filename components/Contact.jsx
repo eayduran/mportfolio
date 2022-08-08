@@ -11,10 +11,12 @@ const Contact = () => {
   const [swidth, setSw] = useState(0)
   const [contactswidth, setContw] = useState(71)
   const [contactc, setContactc] = useState(0)
+  const [testheight, setHeight] = useState(0)
 
     // let swidth = window.innerWidth;
     // let projectswidth = document.getElementById("projectsdiv").offsetWidth
     useEffect(()=>{
+        setHeight(window.innerHeight)
         const scroll = (event) => {
         // console.log(window.scrollY, swidth)
         setSrc(window.scrollY)
@@ -28,12 +30,12 @@ const Contact = () => {
     return(        
         <div id="contact" className="overflow-x-hidden flex w-full flex-col h-screen bg-secondary">
             <div className="bg-secondary text-primary-light font-bold flex items-center justify-start w-full h-20 text-4xl font-sans">
-                          <div id="contactsdiv" className="w-auto" style={{marginLeft: scr<1492?-200: (1.8*scr - 3184)<=(swidth/2 - contactswidth/2)? 1.8*scr - 3184: (swidth/2 - contactswidth/2)}}>
+                          <div id="contactsdiv" className="w-auto" style={{marginLeft: scr<testheight*2.2 ?(-1)*(testheight*2/7): (1.8*scr - testheight*4)<=(swidth/2 - contactswidth/2)? 1.8*scr - testheight*4: (swidth/2 - contactswidth/2)}}>
                           CONTACT
                           </div>
             </div>
 
-            <div id="contactc" className="mt-8 w-3/4 h-3/4 bg-red-200ss text-primary-light flex flex-col justify-center items-center text-xl" style={{marginLeft: scr<1492?3200: (5035 - 2.25*scr)>=(swidth/2 - contactc/2)? 5035 - 2.25*scr: (swidth/2 - contactc/2)}}>
+            <div id="contactc" className="mt-8 w-3/4 h-3/4 bg-red-200ss text-primary-light flex flex-col justify-center items-center text-xl" style={{marginLeft: scr<testheight*2.2 ?testheight*4.68: (testheight*6.3 - 2.25*scr)>=(swidth/2 - contactc/2)? testheight*6.3 - 2.25*scr: (swidth/2 - contactc/2)}}>
 
                 <div className="animate-pulse">
                     Feel free to reach out.

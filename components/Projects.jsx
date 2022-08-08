@@ -74,6 +74,8 @@ const Projects = ({screenwidth}) => {
   const [wall1, setWall1] = useState()
   const [wall2, setWall2] = useState()
   const [choosePrj, setChooseP] = useState(0)
+  //test
+  const [testheight, setHeight] = useState(0)
 
   function Books({kitap1, wid, pad, border, color}) {
     return(
@@ -105,7 +107,8 @@ const Projects = ({screenwidth}) => {
     // let projectswidth = document.getElementById("projectsdiv").offsetWidth
     useEffect(()=>{
         const scroll = (event) => {
-
+        
+        setHeight(window.innerHeight)
         setWall1(document.getElementById("wall-1"))
         setWall2(document.getElementById("wall-2"))
         setContentp(document.getElementById("contentdiv"))
@@ -122,12 +125,13 @@ const Projects = ({screenwidth}) => {
     return(        
         <div id="projects" className="pb-8 justify-start overflow-x-hidden space-y-2 h-screen flex flex-col items-center min-w-screen bg-secondary text-white font-sans">
                     <div className="text-primary-light flex items-center justify-start w-full font-bold h-20 text-4xl font-sans z-[100]">
-                                    <div id="projectsdiv" className="w-auto" style={{marginLeft: scr<150?-200: (2*scr - 500)<=(swidth/2 - projectswidth/2)? 2*scr - 500: (swidth/2 - projectswidth/2)}}>
+                                    {/* <div id="projectsdiv" className="w-auto" style={{marginLeft: scr<150?-200: (2*scr - 500)<=(swidth/2 - projectswidth/2)? 2*scr - 500: (swidth/2 - projectswidth/2)}}> */}
+                                    <div id="projectsdiv" className="w-auto" style={{marginLeft: scr<testheight/4.4 ?-200: (2*scr - 5*(testheight)/7)<=(swidth/2 - projectswidth/2)? 2*scr - 5*(testheight)/7: (swidth/2 - projectswidth/2)}}>
                                         PROJECTS
                                     </div>
                     </div>
 
-                    <div id="projectscontdiv" className="duration-700 transition flex justify-center w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<150?3000: (3000 - 5*scr)>=(swidth/2 - projectswidthcont/2)? 3000 - 5*scr: (swidth/2 - projectswidthcont/2)}}>
+                    <div id="projectscontdiv" className="duration-700 transition flex justify-center w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<testheight/4.4 ?3000: (testheight*(30/7) - 5*scr)>=(swidth/2 - projectswidthcont/2)? testheight*(30/7) - 5*scr: (swidth/2 - projectswidthcont/2)}}>
                         <div className="flex flex-col justify-center py-6 px-2 w-3/4 ssbg-gray-800 items-center">
                             
                             <div className="flex flex-col lg:flex-row">
