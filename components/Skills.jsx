@@ -35,7 +35,7 @@ const Skills = () => {
 
             <div id="skillcontent" className="text-sm sm:text-base sm:mt-8 w-3/4 h-3/4 text-primary-light flex flex-col justify-center items-center lg:text-xl" style={{marginLeft: scr<810?3200: (3200 - 2.5*scr)>=(swidth/2 - skillc/2)? 3200 - 2.5*scr: (swidth/2 - skillc/2)}}>
                 <div className="flex flex-col items-center sm:flex-row w-full h-20 justify-center">
-                    <div className="flex border-b-2 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center">
+                    <div className="flex border-b-2 mb-2 sm:mb-0 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center">
                         Frontend
                     </div>
                     <div className="w-1/6 h-full justify-center items-center flex">
@@ -53,7 +53,7 @@ const Skills = () => {
                 </div>
                 
                 <div className="mt-10 flex flex-col items-center sm:flex-row w-full h-20 justify-center">
-                    <div className="flex border-b-2 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center flex">
+                    <div className="flex border-b-2 mb-2 sm:mb-0 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center flex">
                         Backend
                     </div>
                     <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
@@ -70,8 +70,8 @@ const Skills = () => {
                     </div>
                 </div>
 
-                <div className="mt-2 sm:mt-10 flex flex-col items-center sm:flex-row w-full h-20 justify-center">
-                    <div className="border-b-2 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center flex">
+                <div className="mt-6 sm:mt-10 flex flex-col items-center sm:flex-row w-full h-20 justify-center">
+                    <div className="border-b-2 mb-2 sm:mb-0 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center flex">
                         Database
                     </div>
                     <div className="w-1/6 h-full justify-center items-center flex">
@@ -90,7 +90,7 @@ const Skills = () => {
 
 
                 <div className="mt-16 sm:mt-10 flex flex-col items-center sm:flex-row w-full h-20 justify-center">
-                    <div className="text-center lg:text-left border-b-2 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center flex">
+                    <div className="text-center mb-2 sm:mb-0 lg:text-left border-b-2 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center flex">
                         Other Skills
                     </div>
                     <div className="text-center lg:text-left w-1/6 h-full justify-center items-center flex">

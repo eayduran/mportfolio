@@ -45,26 +45,26 @@ const Contact = () => {
                     <a href = "mailto: ayduranenes@gmail.com">ayduranenes@gmail.com</a>
                 </div>
 
-                <div className="flex flex-row w-full bg-red-200ss h-16 justify-center mt-10">
-                    <a className="hover:text-white hover:bg-primary transition duration-300 border-2 border-primary rounded-full mr-10 w-1/6 h-full justify-center items-center flex bg-secondary" href = "https://www.linkedin.com/in/enesayduran" target="_blank" rel="noopener noreferrer">
+                <div className="flex flex-col sm:flex-row w-full text-base lg:text-xl sm:h-16 justify-center items-center mt-10">
+                    <a className="hover:text-white hover:bg-primary transition duration-300 border-2 p-2 sm:p-0 border-primary rounded-full sm:mr-10 w-5/6 h-full justify-center items-center flex bg-secondary" href = "https://www.linkedin.com/in/enesayduran" target="_blank" rel="noopener noreferrer">
                         <div>
                             Linkedin
                         </div>
                     </a>
 
-                    <a className="hover:text-white hover:bg-primary transition duration-300 border-2 border-primary rounded-full mr-10 bg-secondary w-1/6 h-full justify-center items-center flex" href = "https://www.github.com/eayduran" target="_blank" rel="noopener noreferrer">
+                    <a className="mt-2 sm:mt-0 hover:text-white hover:bg-primary transition duration-300 border-2 p-2 sm:p-0 border-primary rounded-full sm:mr-10 bg-secondary w-5/6 h-full justify-center items-center flex" href = "https://www.github.com/eayduran" target="_blank" rel="noopener noreferrer">
                         <div>
                             Github
                         </div>
                     </a>
                     
-                    <a className="hover:text-white hover:bg-primary transition duration-300 border-2 border-primary rounded-full mr-10 bg-secondary w-1/6 h-full justify-center items-center flex" href = "https://www.twitter.com/codewithenes" target="_blank" rel="noopener noreferrer">
+                    <a className="my-2 sm:my-0 hover:text-white hover:bg-primary transition duration-300 border-2 p-2 sm:p-0 border-primary rounded-full sm:mr-10 bg-secondary w-5/6 h-full justify-center items-center flex" href = "https://www.twitter.com/codewithenes" target="_blank" rel="noopener noreferrer">
                         <div>
                             Twitter
                         </div>
                     </a>
                     
-                    <a className="hover:text-white hover:bg-primary transition duration-300 border-2 border-primary rounded-full bg-secondary w-1/6 h-full justify-center items-center flex" href = "https://www.youtube.com/channel/UCr4eRd4JX3PD-vh1TAFKSAw" target="_blank" rel="noopener noreferrer">
+                    <a className="hover:text-white hover:bg-primary transition duration-300 border-2 p-2 sm:p-0 border-primary rounded-full bg-secondary w-5/6 h-full justify-center items-center flex" href = "https://www.youtube.com/channel/UCr4eRd4JX3PD-vh1TAFKSAw" target="_blank" rel="noopener noreferrer">
                         <div>
                             Youtube
                         </div>
