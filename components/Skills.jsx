@@ -11,9 +11,12 @@ const Skills = () => {
   const [swidth, setSw] = useState(0)
   const [skillswidth, setSkillw] = useState(71)
   const [skillc, setSkillC] = useState()
+  const [testheight, setHeight] = useState(0)
+
     // let swidth = window.innerWidth;
     // let projectswidth = document.getElementById("projectsdiv").offsetWidth
     useEffect(()=>{
+        setHeight(window.innerHeight)
         const scroll = (event) => {
         // console.log(window.scrollY, swidth)
         
@@ -28,12 +31,12 @@ const Skills = () => {
     return(        
         <div id="skills" className="overflow-x-hidden flex w-full flex-col h-screen bg-secondary">
             <div className="text-primary-light flex items-center justify-start font-bold w-full h-20 text-4xl font-sans">
-                    <div id="skillsdiv" className="w-auto" style={{marginLeft: scr<810?-150: (2*scr - 1770)<=(swidth/2 - skillswidth/2)? 2*scr - 1770: (swidth/2 - skillswidth/2)}}>
+                    <div id="skillsdiv" className="w-auto" style={{marginLeft: scr<testheight*1.2 ?-150: (2*scr - testheight*2.6)<=(swidth/2 - skillswidth/2)? 2*scr - testheight*2.6: (swidth/2 - skillswidth/2)}}>
                     SKILLS
                     </div>
             </div>
 
-            <div id="skillcontent" className="text-sm sm:text-base sm:mt-8 w-3/4 h-3/4 text-primary-light flex flex-col justify-center items-center lg:text-xl" style={{marginLeft: scr<810?3200: (3200 - 2.5*scr)>=(swidth/2 - skillc/2)? 3200 - 2.5*scr: (swidth/2 - skillc/2)}}>
+            <div id="skillcontent" className="text-sm sm:text-base sm:mt-8 w-3/4 h-3/4 text-primary-light flex flex-col justify-center items-center lg:text-xl" style={{marginLeft: scr<testheight*1.2 ?testheight*4.67: (testheight*4.67 - 2.5*scr)>=(swidth/2 - skillc/2)? testheight*4.67 - 2.5*scr: (swidth/2 - skillc/2)}}>
                 <div className="flex flex-col items-center sm:flex-row w-full h-20 justify-center">
                     <div className="flex border-b-2 mb-2 sm:mb-0 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center">
                         Frontend
