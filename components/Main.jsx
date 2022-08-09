@@ -60,6 +60,11 @@ const Main = () => {
                             </div>
                         </div>
                     </div>
+                    {/* <div className="">
+                        <div className="h-40 w-40 text-6xl rounded shim-red">
+                            asd
+                        </div>
+                    </div> */}
                     <div className="pt-6 animate-bounce bg-secondary flex items-center w-full justify-center" style={{color: `rgba(255,255,255,${scr<800? 1-scr/800: 0}`}}>
                         <span>
                         Scroll Down

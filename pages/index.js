@@ -4,7 +4,7 @@ import Contact from "../components/Contact"
 import Projects from "../components/Projects"
 import Skills from "../components/Skills"
 import Upbutton from "../components/Upbutton"
-
+import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -25,6 +25,10 @@ export default function Home() {
   return (
     //  scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-screen overflow-y-scroll
     <div className="font-mono divide-y divide-primary">
+      <Head>
+        <title>Enes Ayduran</title>
+        <meta name="description" content="Portfolio"/>
+      </Head>
       <Main />
       {/* <About /> */}
       <Projects screenwidth={scwidth}/>
