@@ -33,18 +33,18 @@ const Skills = () => {
                     </div>
             </div>
 
-            <div id="skillcontent" className="mt-8 w-3/4 h-3/4 bg-red-200ss text-primary-light flex flex-col justify-center items-center text-xl" style={{marginLeft: scr<810?3200: (3200 - 2.5*scr)>=(swidth/2 - skillc/2)? 3200 - 2.5*scr: (swidth/2 - skillc/2)}}>
-                <div className="flex flex-row w-full h-20 justify-center">
-                    <div className="border-r-2 border-primary-light mr-20 w-1/6 h-full justify-center items-center flex">
+            <div id="skillcontent" className="text-sm sm:text-base sm:mt-8 w-3/4 h-3/4 text-primary-light flex flex-col justify-center items-center lg:text-xl" style={{marginLeft: scr<810?3200: (3200 - 2.5*scr)>=(swidth/2 - skillc/2)? 3200 - 2.5*scr: (swidth/2 - skillc/2)}}>
+                <div className="flex flex-col items-center sm:flex-row w-full h-20 justify-center">
+                    <div className="flex border-b-2 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center">
                         Frontend
                     </div>
                     <div className="w-1/6 h-full justify-center items-center flex">
                         NextJS
                     </div>
-                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                    <div className="w-1/6 h-full justify-center items-center flex">
                         ReactJS
                     </div>
-                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                    <div className="w-1/6 h-full justify-center items-center flex">
                         Tailwind
                     </div>
                     <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
@@ -52,8 +52,8 @@ const Skills = () => {
                     </div>
                 </div>
                 
-                <div className="mt-10 flex flex-row w-full h-20 justify-center">
-                    <div className="border-r-2 border-primary-light mr-20 w-1/6 h-full justify-center items-center flex">
+                <div className="mt-10 flex flex-col items-center sm:flex-row w-full h-20 justify-center">
+                    <div className="flex border-b-2 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center flex">
                         Backend
                     </div>
                     <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
@@ -62,50 +62,50 @@ const Skills = () => {
                     <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
                         ExpressJS
                     </div>
-                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                    <div className="w-1/6 h-full justify-center items-center flex">
                         
                     </div>
-                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                    <div className=" w-1/6 h-full justify-center items-center flex">
                         
                     </div>
                 </div>
 
-                <div className="mt-10 flex flex-row w-full h-20 justify-center">
-                    <div className="border-r-2 border-primary-light mr-20 w-1/6 h-full justify-center items-center flex">
+                <div className="mt-2 sm:mt-10 flex flex-col items-center sm:flex-row w-full h-20 justify-center">
+                    <div className="border-b-2 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center flex">
                         Database
                     </div>
-                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                    <div className="w-1/6 h-full justify-center items-center flex">
                         MySQL
                     </div>
-                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                    <div className="w-1/6 h-full justify-center items-center flex">
                         MongoDB
                     </div>
-                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                    <div className="w-1/6 h-full justify-center items-center flex">
                         Firestore
                     </div>
-                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                    <div className="w-1/6 h-full justify-center items-center flex">
                         
                     </div>
                 </div>
 
-                <div className="mt-10 flex flex-row w-full h-20 justify-center">
-                    <div className="border-r-2 border-primary-light mr-20 w-1/6 h-full justify-center items-center flex">
+
+                <div className="mt-16 sm:mt-10 flex flex-col items-center sm:flex-row w-full h-20 justify-center">
+                    <div className="text-center lg:text-left border-b-2 sm:border-b-0 sm:border-r-2 border-primary-light sm:mr-8 lg:mr-20 w-1/6 h-full justify-center items-center flex">
                         Other Skills
                     </div>
-                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                    <div className="text-center lg:text-left w-1/6 h-full justify-center items-center flex">
                         React Native
                     </div>
-                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                    <div className="w-1/6 h-full justify-center items-center flex">
                         Wordpress
                     </div>
-                    <div className="ssbg-gray-400 w-1/6 h-full justify-center items-center flex">
+                    <div className="w-1/6 h-full justify-center items-center flex">
                         Python
                     </div>
-                    <div className="ssbg-green-400 w-1/6 h-full justify-center items-center flex">
+                    <div className="w-1/6 h-full justify-center items-center flex">
                         C++
                     </div>
                 </div>
-
 
 
             </div>
