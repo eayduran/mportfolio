@@ -1,110 +1,49 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "./Navbar"
-import MainSVG from "../public/assets/Main.svg";
-import line from "../public/assets/line.svg";
 import Back from "../public/assets/back.svg";
-import Prj1Jpeg from "../public/assets/main.jpeg";
-import mordesign from "../public/assets/mordesign.jpeg";
-
+import { pData } from "../public/data/projectsdata";
 import {useEffect, useState} from 'react';
 
-const pData =[
-    {
-        img: mordesign,
-        header: 'Portfolio',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-        tags: ['NextJS', 'tailwind'],
-        website: 'https://react-age-of-empires.netlify.app/',
-        source: 'https://github.com/eayduran/react-age-of-empires',
-    },
-    {
-        img: mordesign,
-        header: 'E-commerce',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-        tags: ['NextJS', 'tailwind'],
-        website: 'https://www.hepsiburada.com',
-        source: 'https://github.com/eayduran/rl-walking-robot-gym',
-    },
-    {
-        img: mordesign,
-        header: 'To do',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-        tags: ['ReactJS', 'tailwind'],
-        website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
-        source: 'https://github.com/eayduran/react-native-linkedin-auth',
-    },
-    {
-        img: mordesign,
-        header: 'React Auth',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-        tags: ['React Native', 'tailwind'],
-        website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
-        source: 'https://github.com/eayduran/react-native-linkedin-auth',
-    },
-    {
-        img: mordesign,
-        header: 'Weather App',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-        tags: ['React Native', 'tailwind'],
-        website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
-        source: 'https://github.com/eayduran/react-native-linkedin-auth',
-    },
-    {
-        img: mordesign,
-        header: 'Shop App',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-        tags: ['React Native', 'tailwind'],
-        website: 'https://www.youtube.com/watch?v=qSQ4tCrc-OA',
-        source: 'https://github.com/eayduran/react-native-linkedin-auth',
-    },
-
-]
-
-
-
-
 const Projects = ({screenwidth}) => {
-  const [scr, setSrc] = useState(0)
-  const [swidth, setSw] = useState(0)
-  const [projectswidth, setPrjw] = useState(71)
-  const [projectswidthcont, setPrjwcont] = useState(71)
-  const [funcCont, setFunc] = useState()
-  const [contentp, setContentp] = useState()
-  const [wall1, setWall1] = useState()
-  const [wall2, setWall2] = useState()
-  const [choosePrj, setChooseP] = useState(0)
-  //test
-  const [testheight, setHeight] = useState(0)
+  const [scr, setSrc] = useState(0) // scroll'u okuma
+  const [swidth, setSw] = useState(0) // screen'in genişliğini almak için
+  const [projectswidth, setPrjw] = useState(71) // sayfayı ortalamak için projelerin genişliklerini hesaplama
+  const [projectswidthcont, setPrjwcont] = useState(71) // sayfayı ortalamak için projenin içeriğinin genişliklerini hesaplama
+  const [funcCont, setFunc] = useState() // content'i select etmek için
+  const [contentp, setContentp] = useState() // proje detayini select etmek için
+  const [wall1, setWall1] = useState() // projeye tıklayınca oluşan animasyonun sol tarafı
+  const [wall2, setWall2] = useState() // projeye tıklayınca oluşan animasyonun sağ tarafı
+  const [choosePrj, setChooseP] = useState(0) // tıklanan projenin içeriğini aktarmak için index
+  const [heightofscreen, setHeight] = useState(0) // responsive ekran için sayfa yüksekliğini alıyoruz. Böylece her ekranda yazılar düzgün bir biçimde sağdan ve soldan sayfaya geliyor.
 
-  function Books({kitap1, wid, pad, border, color}) {
-    return(
-        <div className="cursor-pointer border-solid w-auto flex flex-col justify-center items-center group" onClick={()=>{
-            setChooseP(kitap1)
-            funcCont.classList.remove("opacity-100");
-            funcCont.classList.add("opacity-0");
-            setTimeout(() => {
-                funcCont.classList.add("hidden");
-                // funcCont.classList.remove("opacity-0");
-                // buraya yeni animasyon eklenecek
-                contentp.classList.remove("hidden")
-                setTimeout(() => {
-                wall1.classList.add("-translate-x-3/4")
-                wall2.classList.add("translate-x-3/4")
-                }, 100)
-            }, 700)
-        }}>
-            <div style={{width: wid, paddingLeft: pad, border: border, borderColor: color, borderRightStyle: 'solid'}} className='transition-colors h-20 items-center flex group-hover:text-white text-primary-light hover:bg-primary border-solid text-2xl'>
-                {pData[kitap1].header}
+    function SingleProject({indexofproject, wid, pad, border, color}) {
+        return(
+            <div className="cursor-pointer border-solid w-auto flex flex-col justify-center items-center group" 
+                onClick={()=>{
+                    setChooseP(indexofproject)
+                    funcCont.classList.remove("opacity-100");
+                    funcCont.classList.add("opacity-0");
+                    setTimeout(() => {
+                        funcCont.classList.add("hidden");
+                        // funcCont.classList.remove("opacity-0");
+                        // buraya yeni animasyon eklenecek
+                        contentp.classList.remove("hidden")
+                        setTimeout(() => {
+                        wall1.classList.add("-translate-x-3/4")
+                        wall2.classList.add("translate-x-3/4")
+                        }, 100)
+                    }, 700)
+            }}>
+                <div style={{width: wid, paddingLeft: pad, border: border, borderColor: color, borderRightStyle: 'solid'}} className='transition-colors h-20 items-center flex group-hover:text-white text-primary-light hover:bg-primary border-solid text-2xl'>
+                    {pData[indexofproject].header}
+                </div>
+                <div className="text-sm text-primary group-hover:text-turk transition-colors">
+                    {pData[indexofproject].tags[0]}
+                </div>
             </div>
-            <div className="text-sm text-primary group-hover:text-turk transition-colors">
-                {pData[kitap1].tags[0]}
-            </div>
-        </div>
         );
     }
-    // let swidth = window.innerWidth;
-    // let projectswidth = document.getElementById("projectsdiv").offsetWidth
+    // 
     useEffect(()=>{
         const scroll = (event) => {
         
@@ -126,26 +65,26 @@ const Projects = ({screenwidth}) => {
         <div id="projects" className="pb-8 justify-start overflow-x-hidden space-y-2 h-screen flex flex-col items-center min-w-screen bg-secondary text-white font-sans">
                     <div className="text-primary-light flex items-center justify-start w-full font-bold h-20 text-4xl font-sans z-[100]">
                                     {/* <div id="projectsdiv" className="w-auto" style={{marginLeft: scr<150?-200: (2*scr - 500)<=(swidth/2 - projectswidth/2)? 2*scr - 500: (swidth/2 - projectswidth/2)}}> */}
-                                    <div id="projectsdiv" className="w-auto" style={{marginLeft: scr<testheight/4.4 ?-200: (2*scr - 5*(testheight)/7)<=(swidth/2 - projectswidth/2)? 2*scr - 5*(testheight)/7: (swidth/2 - projectswidth/2)}}>
+                                    <div id="projectsdiv" className="w-auto" style={{marginLeft: scr<heightofscreen/4.4 ?-200: (2*scr - 5*(heightofscreen)/7)<=(swidth/2 - projectswidth/2)? 2*scr - 5*(heightofscreen)/7: (swidth/2 - projectswidth/2)}}>
                                         PROJECTS
                                     </div>
                     </div>
 
-                    <div id="projectscontdiv" className="duration-700 transition flex justify-center w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<testheight/4.4 ?3000: (testheight*(30/7) - 5*scr)>=(swidth/2 - projectswidthcont/2)? testheight*(30/7) - 5*scr: (swidth/2 - projectswidthcont/2)}}>
+                    <div id="projectscontdiv" className="duration-700 transition flex justify-center w-full h-5/6 text-4xl font-sans" style={{marginLeft: scr<heightofscreen/4.4 ?3000: (heightofscreen*(30/7) - 5*scr)>=(swidth/2 - projectswidthcont/2)? heightofscreen*(30/7) - 5*scr: (swidth/2 - projectswidthcont/2)}}>
                         <div className="flex flex-col justify-center py-6 px-2 w-3/4 ssbg-gray-800 items-center">
                             
                             <div className="flex flex-col lg:flex-row">
                                 <div className="flex">
-                                    <Books kitap1={0} wid={180} pad={50} border={2} color="rgb(170,170,170)"/>
-                                    <Books kitap1={1} wid={180} pad={20} border={screenwidth<1024?0:2} color="rgb(170,170,170)"/>
+                                    <SingleProject indexofproject={0} wid={180} pad={50} border={2} color="rgb(170,170,170)"/>
+                                    <SingleProject indexofproject={1} wid={180} pad={20} border={screenwidth<1024?0:2} color="rgb(170,170,170)"/>
                                 </div>
                                 <div className="flex">
-                                    <Books kitap1={2} wid={180} pad={60} border={2} color="rgb(170,170,170)"/>
-                                    <Books kitap1={3} wid={180} pad={33} border={screenwidth<1024?0:2} color="rgb(170,170,170)"/>
+                                    <SingleProject indexofproject={2} wid={180} pad={60} border={2} color="rgb(170,170,170)"/>
+                                    <SingleProject indexofproject={3} wid={180} pad={33} border={screenwidth<1024?0:2} color="rgb(170,170,170)"/>
                                 </div>
                                 <div className="flex">
-                                    <Books kitap1={4} wid={180} pad={20} border={2} color="rgb(170,170,170)"/>
-                                    <Books kitap1={5} wid={180} pad={40} border={0} color="rgb(170,170,170)"/>
+                                    <SingleProject indexofproject={4} wid={180} pad={20} border={2} color="rgb(170,170,170)"/>
+                                    <SingleProject indexofproject={5} wid={180} pad={40} border={0} color="rgb(170,170,170)"/>
                                 </div>
 
                             </div>
@@ -153,7 +92,7 @@ const Projects = ({screenwidth}) => {
                         </div>
                     </div>
                  
-                    {/* animasyon */}
+                    {/* Projects detail after animation */}
                     <div id="contentdiv" className="hidden bg-primary flex justify-center items-center mb-10 w-full h-5/6 font-xs sm:text-4xl font-sans">
                         <div className="flex flex-col justify-between text-white z-20 absolute w-3/4 h-3/4">
                                 <div className="pl-4 flex">
