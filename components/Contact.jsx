@@ -35,7 +35,7 @@ const Contact = () => {
                           </div>
             </div>
 
-            <div id="contactc" className="mt-8 w-3/4 h-3/4 bg-red-200ss text-primary-light flex flex-col justify-center items-center text-xl" style={{marginLeft: scr<heightofscreen*2.1 ?heightofscreen*4.68: (heightofscreen*6.3 - 2.25*scr)>=(swidth/2 - contactc/2)? heightofscreen*6.3 - 2.25*scr: (swidth/2 - contactc/2)}}>
+            <div id="contactc" className="mt-8 w-3/4 h-3/4 bg-red-200ss text-primary-light flex flex-col justify-between items-center text-xl" style={{marginLeft: scr<heightofscreen*2.1 ?heightofscreen*4.68: (heightofscreen*6.3 - 2.25*scr)>=(swidth/2 - contactc/2)? heightofscreen*6.3 - 2.25*scr: (swidth/2 - contactc/2)}}>
 
                 <div className="animate-pulse text-sm sm:text-xl">
                     Feel free to reach out.
@@ -72,6 +72,9 @@ const Contact = () => {
 
                 </div>
                 
+                <div className="text-white flex flex-row w-full h-2s0 mt-10s justify-center items-center">
+                    © 2022 Enes Ayduran
+                </div>
 
             </div>            
         </div>
