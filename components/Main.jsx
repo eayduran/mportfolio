@@ -55,7 +55,7 @@ const Main = () => {
                             <div className="flex flex-col text-center w-52 text-primary-light bg-secondary text-3xl sm:text-6xl sm:ml-16 font-sans font-light sm:mr-4">
                                     About 
                                 <span className="text-sm mt-4">
-                                I`m a front-end developer building scalable, performant, and responsive websites located in Istanbul. Currently, I`m producing useful UI and webpages at Adesso Turkey.
+                                I`m a front-end developer building scalable, performant, and responsive websites located in Graz, Austria. Currently, I`m producing UI and Backend systems at Greenhive Gmbh.
                                 </span>
                             </div>
                         </div>
