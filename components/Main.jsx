@@ -20,10 +20,9 @@ const Main = () => {
                     <Navbar />
                     <div className="sm:1/4 sm:ml-6 sm:text-tablet lg:text-laptop text-mobile lg:h-1/3 lg:w-auto tracking-tight flex flex-row items-center">
                         <div className="" style={{}}>
-                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">F</span>
-                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">R</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">S</span>
                             <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">O</span>
-                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">N</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">F</span>
                             <span className="text-primary hover:text-primary-light transition-colors">T</span>
                         </div>
 
@@ -33,9 +32,10 @@ const Main = () => {
                         </div>
             
                         <div>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">W</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">A</span>
+                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">R</span>
                             <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">E</span>
-                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">N</span>
-                            <span className="lg:mr-zero text-primary hover:text-primary-light transition-colors">D</span>
                         </div>
                     </div>
                     {/* <div className="flex items-center w-full justify-center">junior</div> */}
